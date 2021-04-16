@@ -12,6 +12,11 @@ body {
   margin: 0;
   
 }
+.container{
+  box-sizing: content-box;
+  max-width: 1200px;
+  margin: 0 auto;
+}
 .d-flex{
   display:flex;
 }
@@ -41,6 +46,9 @@ body {
 }
 .al-it-center{
   align-items: center;
+}
+.btn{
+  text-align: center;
 }
 
 @media  (min-width: 1200px){
@@ -106,6 +114,9 @@ h2 {
   margin-left:20px;
   margin-right: 20px;
 }
+.main p{
+  font-size: 16px;
+}
 .access-data input , .get-access input {
   min-width: 374px;
   min-height: 50px;
@@ -122,6 +133,7 @@ h2 {
 #page-pricing h3{
   font-size: 16px;
   margin-bottom: 180px;
+  line-height: 24px;
 }
 .price-page-item + .price-page-item {
   margin-left: 0;
@@ -130,10 +142,10 @@ h2 {
     margin-left: 0;
 }
 .price-page-items {
- margin-left:-40px;
+ margin-left:0px;
  margin-bottom: 0;
 }
-.price-page-items li{
+.price-page-item {
   margin-bottom: 30px;
 }
 .ps{
@@ -161,6 +173,7 @@ h2 {
 
 #page-news h3 {
   font-size: 16px;
+  font-weight: 400;
   
 }
 .news-body p , .news-body-2 p{
@@ -226,7 +239,7 @@ h2 {
 
 /* Artist */
 /* Block page description artist */
-.artist h1 , p{
+.artist h1 , .artist p{
   text-align: left;
   margin-left: 20px;
   margin-right: 20px;
@@ -241,7 +254,7 @@ h2 {
 }
  /* Block Popular-Track artist */
 #page-popular-track h2{
-  margin-left: 20px;
+  /*margin-left: 20px; */
 }
 .popular-track-list{
   display: flex;
@@ -259,8 +272,12 @@ h2 {
 }
 .time-track{
  position: absolute;
- right:5px;
+ left:330px;
 }
+.time-track-1{
+  position: absolute;
+  left:330px;
+ }
 
 /* Block Page-Discography Artist*/  
    
@@ -290,6 +307,7 @@ h2 {
 /* Block Page- Similar Artist*/
 #page-similar h2{
   margin-left: 20px;
+  margin-top: 0;
 } 
 
 .similar-items{
@@ -304,7 +322,9 @@ h2 {
   margin-bottom: 25px;
   margin-right: 50px;
 }
-
+.similar-item:nth-child(5) , .similar-item:nth-child(6) {
+    margin-bottom: 25px;
+}
 .similar-item img{
   width: 137px;
   height: 137px;

@@ -3,7 +3,6 @@
 /* Все основные настройки проекта и цветовые схемы расположите в нём. Это удобнее сделать сразу. Определите основные цвета сайта и создайте для них соответствующие переменные. Подключите файл в самом верху файла app.scss. */
 .header {
   left: 80px;
-  right: 120px;
   position: absolute;
   top: 25px;
   color: #cacaca;
@@ -76,11 +75,22 @@
 }
 .main h1 {
   margin-bottom: 0;
-  margin-top: 0;
+  margin-top: 65px;
+  margin-left: 0px;
+  margin-right: 0px;
+  color: #ffffff;
 }
 .main h2 {
-  margin-bottom: 32px;
+  margin-bottom: 22px;
   margin-top: 0;
+  margin-left: 0px;
+  margin-right: 0px;
+  color: #ffffff;
+}
+.main p {
+  padding-top: 0;
+  margin-top: 0;
+  color: #ffffff;
 }
 
 .main h1, .main h2, .main p, .access-music, .main-pricing h2, .main-news h2, .main-app h2, .ps {
@@ -110,6 +120,7 @@
     justify-content: center;
 } */
 .get-access input {
+  box-sizing: border-box;
   min-width: 570px;
   min-height: 57px;
   background: #34c176;
@@ -150,11 +161,11 @@
 
 .price-page-items {
   margin-bottom: 50px;
-}
-.price-page-items li {
-  list-style-type: none;
-  display: inline-block;
-  flex-wrap: wrap;
+  /* & li{
+    list-style-type: none; 
+    display: inline-block;
+    flex-wrap: wrap;
+  } */
 }
 
 .price-page-item {
@@ -167,7 +178,7 @@
 }
 .price-page-item h3 {
   font-size: 24px;
-  line-height: 45px;
+  line-height: 36px;
   font-weight: normal;
   text-align: center;
   text-transform: uppercase;
@@ -218,8 +229,7 @@
 
 .ps {
   font-size: 16px;
-  margin-right: 120px;
-  margin-left: 120px;
+  margin: 0;
 }
 
 /*  Block Page News */
@@ -229,11 +239,10 @@
   padding-top: 100px;
   color: #ffffff;
 }
-
 #page-news h2 {
   margin-bottom: 48px;
 }
-#page-news h2 h3 {
+#page-news h3 {
   font-size: 30px;
   line-height: 45px;
   font-weight: normal;
@@ -247,8 +256,6 @@
 .news-item, .news-item-2 {
   display: block;
   flex-wrap: wrap;
-  margin-left: 120px;
-  margin-right: 120px;
 }
 
 .news-item-2 {
@@ -285,7 +292,7 @@
 }
 
 .news-author img, .news-author p {
-  margin-right: -96px;
+  margin-right: 17px;
 }
 
 .to-album {
@@ -306,7 +313,7 @@
   width: 100%;
   height: 100%;
   padding-top: 100px;
-  padding-bottom: 100px;
+  margin-bottom: 100px;
 }
 #page-app h2 {
   color: #ffffff;
@@ -319,16 +326,9 @@
 
 .column-2 {
   column-count: 2;
-  column-width: 600px;
+  column-width: 400px;
 }
 
-/*.info-app{
-    margin-left: 120px;
-
-} */
-/* .img-mobile-app {
-    margin-right: 120px;
-} */
 .info-app p {
   margin-right: 0;
   text-align: justify;
@@ -336,16 +336,15 @@
 }
 
 .info-app input {
-  margin-left: 120px;
   margin-top: 16px;
   min-width: 131px;
   min-height: 53px;
+  padding: 16px 40px;
   background: #95390c;
   border-radius: 32px;
-  border-style: none;
   font-size: 12, 8px;
   color: #ffffff;
-  text-align: center;
+  border-style: none;
 }
 
 /*  Block Footer*/
@@ -369,6 +368,7 @@
 .footer-info {
   column-count: 4;
   margin-bottom: 75px;
+  column-gap: 30px;
 }
 .footer-info ul {
   break-inside: avoid;
@@ -435,21 +435,23 @@
   background-size: cover;
 }
 
-.artist h1, p {
+.artist h1, .artist p {
   text-align: left;
   margin-left: 120px;
   margin-right: 120px;
 }
-.artist h1 h1, p h1 {
-  margin-bottom: 0px;
+
+.artist h1 {
+  margin-bottom: 16px;
 }
-.artist h1 p, p p {
+
+.artist p {
+  margin-top: 0;
   margin-bottom: 48px;
 }
 
 .artist-page {
   margin-left: 120px;
-  margin-right: 120px;
   padding-right: 24px;
 }
 .artist-page input {
@@ -463,12 +465,14 @@
 }
 
 .artist-mix input {
+  padding-left: 0px;
   height: 12, 8px;
   background: #5328a1;
   border: none;
 }
 
 .artist-like input {
+  padding-left: 40px;
   background: #95390c;
   border: none;
 }
@@ -483,18 +487,18 @@
 
 .artist-mix img {
   position: absolute;
-  height: 24px;
-  width: 24px;
+  height: 20px;
+  width: 20px;
   top: 20px;
   left: 31px;
 }
 
 .artist-like img {
   position: absolute;
-  height: 24px;
-  width: 24px;
+  height: 20px;
+  width: 17.79px;
   top: 20px;
-  left: 18px;
+  left: 31px;
 }
 
 /* Block Popular-Track artist */
@@ -504,22 +508,21 @@
   padding-top: 100px;
 }
 #page-popular-track h2 {
-  margin-left: 120px;
+  margin-top: 0;
   margin-bottom: 23px;
   text-align: left;
   color: #ffffff;
 }
 
-.popular-track-list {
-  justify-content: left;
-  margin-left: 120px;
-}
-
 .popular-track {
+  box-sizing: border-box;
+  width: 526px;
+  height: 55px;
   margin-top: 25px;
-  margin-right: -60px;
+  margin-right: 49px;
 }
 .popular-track img {
+  position: relative;
   margin-right: 15px;
   height: 55px;
   width: 55px;
@@ -534,8 +537,15 @@
 }
 
 .time-track {
+  position: absolute;
   align-self: center;
-  margin-left: 130px;
+  left: 620px;
+}
+
+.time-track-1 {
+  position: absolute;
+  align-self: center;
+  left: 1195px;
 }
 
 .track-info h3 {
@@ -553,15 +563,15 @@
   padding-top: 100px;
 }
 #page-discography h2 {
-  margin-left: 120px;
+  margin-top: 0;
   margin-bottom: 49px;
   text-align: left;
   color: #ffffff;
 }
 
 .discography-items {
-  margin-left: 120px;
-  margin-right: 120px;
+  /* margin-left: 120px;
+  margin-right: 120px;  */
 }
 
 .discography-item {
@@ -593,6 +603,7 @@
   margin-top: 18px;
   margin-bottom: 0;
   color: #ffffff;
+  text-transform: capitalize;
 }
 
 .discography-info p {
@@ -609,15 +620,15 @@
   padding-top: 100px;
 }
 #page-similar h2 {
-  margin-left: 120px;
+  margin-top: 0;
   margin-bottom: 49px;
   text-align: left;
   color: #ffffff;
 }
 
 .similar-items {
-  margin-left: 120px;
-  margin-right: 120px;
+  /* margin-left: 120px;
+   margin-right: 120px; */
   margin-bottom: 100px;
 }
 
@@ -632,6 +643,11 @@
   height: 250px;
 }
 
+.similar-item:nth-child(5), .similar-item:nth-child(6),
+.similar-item:nth-child(7), .similar-item:nth-child(8) {
+  margin-bottom: 0;
+}
+
 .similar-info h3 {
   font-size: 18px;
   text-align: center;
@@ -640,6 +656,7 @@
   margin-top: 18px;
   margin-bottom: 0;
   color: #ffffff;
+  text-transform: capitalize;
 }
 
 .similar-info p {
@@ -662,6 +679,12 @@ body {
   color: #cacaca;
   background-color: #08020d;
   margin: 0;
+}
+
+.container {
+  box-sizing: content-box;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 .d-flex {
@@ -694,6 +717,10 @@ body {
 
 .al-it-center {
   align-items: center;
+}
+
+.btn {
+  text-align: center;
 }
 
 @media (min-width: 1200px) {
@@ -765,6 +792,10 @@ body {
     margin-right: 20px;
   }
 
+  .main p {
+    font-size: 16px;
+  }
+
   .access-data input, .get-access input {
     min-width: 374px;
     min-height: 50px;
@@ -782,6 +813,7 @@ body {
   #page-pricing h3 {
     font-size: 16px;
     margin-bottom: 180px;
+    line-height: 24px;
   }
 
   .price-page-item + .price-page-item {
@@ -793,11 +825,11 @@ body {
   }
 
   .price-page-items {
-    margin-left: -40px;
+    margin-left: 0px;
     margin-bottom: 0;
   }
 
-  .price-page-items li {
+  .price-page-item {
     margin-bottom: 30px;
   }
 
@@ -826,6 +858,7 @@ body {
 
   #page-news h3 {
     font-size: 16px;
+    font-weight: 400;
   }
 
   .news-body p, .news-body-2 p {
@@ -899,7 +932,7 @@ body {
 
   /* Artist */
   /* Block page description artist */
-  .artist h1, p {
+  .artist h1, .artist p {
     text-align: left;
     margin-left: 20px;
     margin-right: 20px;
@@ -917,7 +950,7 @@ body {
 
   /* Block Popular-Track artist */
   #page-popular-track h2 {
-    margin-left: 20px;
+    /*margin-left: 20px; */
   }
 
   .popular-track-list {
@@ -937,7 +970,12 @@ body {
 
   .time-track {
     position: absolute;
-    right: 5px;
+    left: 330px;
+  }
+
+  .time-track-1 {
+    position: absolute;
+    left: 330px;
   }
 
   /* Block Page-Discography Artist*/
@@ -969,6 +1007,7 @@ body {
   /* Block Page- Similar Artist*/
   #page-similar h2 {
     margin-left: 20px;
+    margin-top: 0;
   }
 
   .similar-items {
@@ -982,6 +1021,10 @@ body {
   .similar-item {
     margin-bottom: 25px;
     margin-right: 50px;
+  }
+
+  .similar-item:nth-child(5), .similar-item:nth-child(6) {
+    margin-bottom: 25px;
   }
 
   .similar-item img {

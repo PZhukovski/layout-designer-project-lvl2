@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <header class="header">
+    <header class="header container">
         <nav>
           <ul class="horizontal-menu">
             <li class="logo-img"><img src="./images/logo.svg" alt=""></li>
@@ -23,6 +23,7 @@
         </nav>
       </header>
       <section id="page-description" class="main d-flex fd-column">
+       <div class ="container">
       <h1>Онлайн музыка где угодно</h1>
       <h2>Без ограничений</h2>
       <p>Получите доступ всего за несколько шагов. Заполните форму ниже и откройте мир музыки</p>
@@ -39,39 +40,41 @@
                 </div>
               </form>
         </div>
+      </div>
       </section>
-      <section id="page-pricing" class ="main-pricing">
+      
+      <section id="page-pricing" class ="main-pricing container">
        <h2>Формы подписки</h2>
-       <ul class="price-page-items d-flex f-wrap jc-center">
-        <li class="price-page-item"> 
+       <div class="price-page-items d-flex f-wrap jc-center">
+        <div class="price-page-item"> 
          <div class="pricing-item bg-free">
          <h3>Бесплатная</h3>
          <p class="pricing-value">0 <sup>руб.</sup></p>
-         <a class ="arrange d-flex f-wrap jc-center al-it-center" href="#">Оформить</a>
+         <a class ="arrange btn d-flex f-wrap jc-center al-it-center" href="#">Оформить</a>
          <p class="pricing-footer">Оплата в месяц. Бесплатный тариф предоставляет доступ ко всей коллекции музыки. Присутствует реклама</p>
          </div>
-       </li>
-       <li class="price-page-item">
+       </div>
+       <div class="price-page-item">
          <div class="pricing-item bg-standart">
          <h3>Стандартная</h3>
          <p class="pricing-value">250 <sup>руб.</sup></p>
-         <a class ="arrange d-flex f-wrap jc-center al-it-center" href="#">Оформить</a>
+         <a class ="arrange btn d-flex f-wrap jc-center al-it-center" href="#">Оформить</a>
          <p class="pricing-footer">Оплата в месяц. Стандартный тариф предоставляет доступ ко всей коллекции музыки в среднем качестве</p>
          </div>
-      </li>
-      <li class="price-page-item">
+      </div>
+      <div class="price-page-item">
          <div class="pricing-item bg-premium">
          <h3>Премиум</h3>
          <p class="pricing-value">500 <sup>руб.</sup></p>
-         <a class ="arrange d-flex f-wrap jc-center al-it-center" href="#">Оформить</a>
+         <a class ="arrange btn d-flex f-wrap jc-center al-it-center" href="#">Оформить</a>
          <p class="pricing-footer">Оплата в месяц. Премиум тариф предоставляет доступ ко всей коллекции музыки в высоком качестве</p>
          </div>
-     </li>
-  </ul>
+     </div>
+  </div>
     <p class="ps">На всех тарифах возможно прослушивание музыки с мобильных устройств. На премиум тарифе вы можете скачать все композиции на ваше устройство и слушать музыку без подключения к интернету</p>
       </section>
 
-      <section id ="page-news" class="main-news">
+      <section id ="page-news" class="main-news container">
         <h2>Последние новости</h2>
         <div class="news-item">
           <img src="./images/Music to Be Murdered By.png" alt="Не забудьте про alt">
@@ -85,7 +88,7 @@
               <p>MUSIC BOX</p>
               <p>17/01/2020</p>
             </div>
-            <a href="#" class="to-album d-flex f-wrap jc-center al-it-center">К альбому</a>
+            <a href="#" class="to-album btn d-flex f-wrap jc-center al-it-center">К альбому</a>
           </div>
         </div>
         <div class="news-item-2">
@@ -100,18 +103,18 @@
               <p>MUSIC BOX</p>
               <p>24/02/2020</p>
             </div>
-            <a href="#" class="to-album d-flex f-wrap jc-center al-it-center">К альбому</a>
+            <a href="#" class="to-album btn d-flex f-wrap jc-center al-it-center">К альбому</a>
           </div>
         </div>
       </section>
 
-      <section id="page-app" class="main-app">
+      <section id="page-app" class="main-app container">
         <h2>Мобильное приложение</h2>
         <div class="column-2">
         <div class="info-app">
           <p>Воспользуйтесь нашим мобильным приложением. Оно позволит слушать музыку с любого устройства на базе операционных систем Androind и iOS </p>
             <p>С тарифом «Премиум» приложение позволяет скачивать все композиции из нашей коллекции. Вы можете слушать музыку даже без интернета.</p>
-          <input type="submit"  class="btn btn-orange" value="Скачать">
+          <input type="submit"  class="btn btn-center" value="Скачать">
         </div>
         <div class ="img-mobile-app">
           <img src="./images/iphone.png" alt="Не забудьте про alt">
@@ -137,9 +140,9 @@
         </ul>
         <h2>Контакты</h2>
         <ul>
-          <li>hello@music.box</li>
+          <li><a href="#">hello@music.box</a></li>
           <li>Russia, Moscow. Music Box studio</li>
-          <li>+ 7 499 999 99 99</li>
+          <li><a href="#">+ 7 499 999 99 99</a></li>
         </ul>
         <h2>Подписывайтесь</h2>
        <div class ="img-footer"> <a href="#"><img  src="./images/Google+.png" alt="Не забудьте про alt"></a></div>

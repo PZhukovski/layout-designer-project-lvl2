@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <header class="header">
+    <header class="header container">
         <nav>
           <ul class="horizontal-menu">
             <li class="logo-img"><img src="./images/logo.svg" alt=""></li>
@@ -28,16 +28,16 @@
                 <form class="artist-page d-flex f-wrap fd-row jc-left">
                    <div class="artist-mix">
                     <img src="./images/play-button.svg" alt="">
-                       <input type="submit" value="Микс"> 
+                       <input type="submit" class="btn" value="Микс"> 
                   </div>
                   <div class="artist-like">
                     <img src="./images/heart.svg" alt="">
-                      <input type="submit" value="В Избранное"> 
+                      <input type="submit" class="btn" value="В Избранное"> 
                   </div>
-                </form>
+                </form>     
         </section>
 
-        <section id="page-popular-track" class="">
+        <section id="page-popular-track" class="container">
         <h2>Популярные треки</h2>
          <div class ="popular-track-list d-flex f-wrap jc-left">
 
@@ -56,7 +56,7 @@
                 <h3>With You - With me</h3>
                 <p>Morten Harket</p>
             </div>
-            <div class="time-track d-flex jc-end"><p>3:48</p></div>
+            <div class="time-track-1 d-flex jc-end"><p>3:48</p></div>
           </div>
 
           <div class="popular-track d-flex fd-row">
@@ -74,7 +74,7 @@
                 <h3>Brodsky tune</h3>
                 <p>Morten Harket</p>
             </div>
-            <div class="time-track d-flex jc-end"><p>4:24</p></div>
+            <div class="time-track-1 d-flex jc-end"><p>4:24</p></div>
           </div>
 
           <div class="popular-track d-flex fd-row">
@@ -92,12 +92,12 @@
                 <h3>Burn money burn</h3>
                 <p>Morten Harket</p>
             </div>
-            <div class="time-track d-flex jc-end"><p>3:52</p></div>
+            <div class="time-track-1 d-flex jc-end"><p>3:52</p></div>
            </div>
          </div>
         </section>
 
-        <section id="page-discography" class="">
+        <section id="page-discography" class="container">
         <h2>Дискография</h2>
         <div class ="discography-items d-flex f-wrap fd-row">
         <div class="discography-item">
@@ -150,7 +150,7 @@
       </div>
         </section>
 
-        <section id="page-similar" class="">
+        <section id="page-similar" class="container">
         <h2>Похожие артисты</h2>
         <div class="similar-items d-flex f-wrap fd-row">
 
@@ -238,9 +238,9 @@
             </ul>
             <h2>Контакты</h2>
             <ul>
-              <li>hello@music.box</li>
+              <li><a href="#">hello@music.box</a></li>
               <li>Russia, Moscow. Music Box studio</li>
-              <li>+ 7 499 999 99 99</li>
+              <li><a href="#">+ 7 499 999 99 99</a></li>
             </ul>
             <h2>Подписывайтесь</h2>
            <div class ="img-footer"> <a href="#"><img  src="./images/Google+.png" alt="Не забудьте про alt"></a></div>
