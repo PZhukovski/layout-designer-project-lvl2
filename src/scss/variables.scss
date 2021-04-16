@@ -123,7 +123,7 @@
 
 .get-access input{
   box-sizing: border-box;
-  min-width: 570px;
+  width: 570px;
   min-height: 57px;
   background: #34c176;
   border-radius: 5px;
@@ -133,7 +133,7 @@
   text-transform: uppercase;
   color: #ffffff;
 }
-
+@media  (min-width: 1200px){
 /*  Block Page Pricing */
 #page-pricing{
   width: 100%;
@@ -215,6 +215,7 @@
 .arrange  {
   min-width: 300px;
   min-height: 65px;
+  padding: 20px 30px;
   background: transparent;
   border: 2px solid #cacaca;
   border-radius: 3px;
@@ -280,6 +281,8 @@
   margin-left: 0;
   text-align: justify;
   font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
   color: #cacaca;
 }
 
@@ -290,6 +293,7 @@
 
 .news-author{
 & p{
+    margin-bottom: 0;
     font-size: 13px;
     margin-top: 15px;
 }
@@ -307,16 +311,16 @@
 }
 
 .to-album {
-  width: 135px;
-  height: 53px;
+  padding: 16px 30px;
   background: transparent;
   border: 2px solid #cacaca;
   border-radius: 3px;
   color: #ffffff;
+  line-height: 19.2px;
   text-decoration: none;
-  font-size: 13px;
+  font-size: 12.8px;
   text-transform: uppercase;
-  margin-top: 45px;
+  margin-top: 48px;
 }
 
   /*  Block Page App */
@@ -348,18 +352,18 @@
 
 }
 
-.info-app input{
+.info-app button{
   margin-top:16px;
   min-width: 131px;
   min-height: 53px;
   padding: 16px 40px;
   background:#95390c;
   border-radius: 32px;
-  font-size: 12,8px; 
+  font-size: 12.8px; 
   color: #ffffff;
   border-style: none;
 }
-
+}
 /*  Block Footer*/
 .footer{
   width: 100%;
@@ -472,7 +476,7 @@
   margin-left: 120px;
   padding-right: 24px;
 
-& input{
+& button{
   box-sizing: border-box;
   min-width: 200px;
   min-height: 62px;
@@ -480,17 +484,17 @@
   border-radius: 5px;
   font-size: 12.8px;
   color: #ffffff;
+  line-height: 19.2px;
  }
 }
-.artist-mix input{
-   padding-left: 0px;
-  height:12,8px;
+.artist-mix button {
+  padding-left: 0px;
   background: #5328a1;
   border: none;
 }
 
-.artist-like input{
-    padding-left: 40px;
+.artist-like button{
+  padding-left: 40px;
   background: #95390c;
   border: none;
 }
@@ -518,7 +522,7 @@
   top: 20px;
   left: 31px;
 }
-
+@media  (min-width: 1200px){
  /* Block Popular-Track artist */
 #page-popular-track{
   width: 100%;
@@ -686,4 +690,5 @@
   font-size: 16px;
   color: #e0e0e0;
   line-height: 24px;
+}
 }
