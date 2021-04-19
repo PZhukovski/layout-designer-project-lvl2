@@ -17,7 +17,7 @@ body {
   box-sizing: content-box;
   max-width: 1200px;
   margin: 0 auto;
-}
+} 
 .d-flex{
   display:flex;
 }
@@ -69,6 +69,11 @@ h2 {
 
 
 @media  (width: 414px){
+  .container{
+    box-sizing: content-box;
+    max-width: 414px;
+    margin: 0 auto;
+  }
 h1 {
   font-size: 30px;
   line-height: 45px;
@@ -84,7 +89,7 @@ h2 {
 /*  Block HEADER */
 .header  {
   max-width: 414px;
-  left: -40px;
+  left: -20px;
   right: 0;
 }
 .horizontal-menu li{
@@ -93,6 +98,7 @@ h2 {
 
 }
 .logo{
+  padding: 0;
   margin-bottom: 23px;
 }
 
@@ -101,12 +107,12 @@ h2 {
 }
 .menu{
   margin-left: 0;
-
+  box-sizing: border-box;
+  width: 82px;
 }
 .search form {
-  margin-left: 0;
-  margin-top: 18px;
-  margin-bottom: 78px;
+  left: 40px;
+  top: 128px;
 }
 .search input{
   width: 374px;
@@ -117,10 +123,12 @@ h2 {
   max-width:414px;
 }
 .main h1{
-  margin-top: 78px;
+  margin-top: 55px;
 }
 .main h2{
   margin-bottom: 16px;
+  margin-left:20px;
+  margin-right: 20px;
 }
 .main h1, h2 , p{
   margin-left:20px;
@@ -132,6 +140,9 @@ h2 {
 .access-data input  {
   min-width: 374px;
   min-height: 50px;
+}
+.get-access{
+  width: 374px;
 }
 .get-access input{
   box-sizing:border-box;
@@ -158,6 +169,9 @@ h2 {
 .price-page-item:nth-child(1) {
     margin-left: 0;
 }
+.price-page-item:nth-child(3){
+  margin-right: 0px;
+}
 .price-page-items {
  margin-left:0px;
  margin-bottom: 0;
@@ -179,7 +193,9 @@ h2 {
   margin-left: 20px;
   margin-right: 20px;
 }
-
+.news-item-2{
+  margin-top:64px;
+}
 .news-item-2 img , .news-item img{
   width: 374px;
   height: 186px;
@@ -191,6 +207,7 @@ h2 {
 #page-news h3 {
   font-size: 16px;
   font-weight: 400;
+  margin-bottom: 0;
   
 }
 .news-body p , .news-body-2 p{
