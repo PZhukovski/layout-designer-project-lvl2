@@ -14,9 +14,11 @@ body {
 }
 
 .container{
-  box-sizing: content-box;
-  max-width: 1200px;
+  box-sizing: border-box;
+  max-width: 1240px;
   margin: 0 auto;
+  padding-left: 20px;
+  padding-right: 20px; 
 } 
 .d-flex{
   display:flex;
@@ -70,9 +72,9 @@ h2 {
 
 @media  (width: 414px){
   .container{
-    box-sizing: content-box;
+    box-sizing: border-box;
     max-width: 414px;
-    margin: 0 auto;
+    margin:0;
   }
 h1 {
   font-size: 30px;
@@ -89,7 +91,7 @@ h2 {
 /*  Block HEADER */
 .header  {
   max-width: 414px;
-  left: -20px;
+  left: -40px;
   right: 0;
 }
 .horizontal-menu li{
@@ -111,7 +113,7 @@ h2 {
   width: 82px;
 }
 .search form {
-  left: 40px;
+  left: 60px;
   top: 128px;
 }
 .search input{
@@ -190,15 +192,15 @@ h2 {
  .news-item , .news-item-2{
   display: flex;
   flex-wrap: wrap;
-  margin-left: 20px;
-  margin-right: 20px;
+  /*margin-left: 20px;
+  margin-right: 20px; */
 }
 .news-item-2{
   margin-top:64px;
 }
 .news-item-2 img , .news-item img{
   width: 374px;
-  height: 186px;
+  height: 187px;
   margin-left: 0;
   margin-right: 0;
   margin-bottom: 48px;
@@ -214,16 +216,19 @@ h2 {
     
   margin-left:0;
   margin-right: 0;
+  margin-bottom: 23px;
 
 }
 .news-author img , .news-author p{
   margin-right:0px;
 }
-
+.news-author p{
+  margin-top:0;
+}
 .news-author img{
   height: 19px;
   width: 19px;
-  margin-top: 12px;
+  margin-top: 0px;
   margin-left: 0;
   margin-bottom: 0;
 }
@@ -231,6 +236,9 @@ h2 {
   #page-app{
     margin-left: 0px;
     margin-right: 0px;
+   & h2{
+     margin-top: 0;
+   } 
   }
   .column-2{
    display: flex;
@@ -238,18 +246,27 @@ h2 {
    justify-content: center;
 }
 .info-app , .img-mobile-app{
-    margin-left: 0;
+    margin-left: -20px;
     margin-right: 0;
+}
+.img-mobile-app img{
+  width:333px;
+  height: 278px;
+}
+.img-mobile-app{
+  box-sizing: border-box;
+  width:333px;
+  height: 278px;
 }
 .info-app + .img-mobile-app{
   margin-left: 0;
 }
 .info-app p {
   text-align: left;
-  margin-right: 20px;
+  /*margin-right: 20px; */
 }
 .info-app button, .img-mobile-app{
-  margin-left: 20px;
+  margin-left: 20px; 
 }
 .img-mobile-app{
   
@@ -259,12 +276,17 @@ h2 {
 .footer-info{
   column-count: 1;
 }
+.footer-info h2:nth-child(1){
+  margin-top: 13px;
+}
 .footer-info , .else-info{
   margin-left: 20px;
   margin-right: 20px;
 }
 .footer h2{
   margin-left: 0px;
+  margin-right: 0;
+  margin-top: 30px;
   
 }
 .else-info li{
@@ -290,12 +312,12 @@ h2 {
 }
  /* Block Popular-Track artist */
 #page-popular-track h2{
-  /*margin-left: 20px; */
+  margin-left: 0px; 
 }
 .popular-track-list{
   display: flex;
   margin-right: 0;
-  margin-left: 20px;
+  margin-left: 0px;
   margin-bottom: 25px;
   flex-direction: column;
 }
@@ -318,14 +340,17 @@ h2 {
 /* Block Page-Discography Artist*/  
    
 #page-discography h2{
-  margin-left: 20px;
+  margin-left: 0px;
   
+}
+.discography-info h3{
+  margin-top:10px;
 }
 .discography-items{
   display:flex;
   flex-direction: row;
-  margin-left: 20px;
-  margin-right: 20px;
+  margin-left: 0px;
+  margin-right: 0px;
 }
 .discography-item:nth-child(5){
   margin-right:50px;
@@ -349,15 +374,15 @@ h2 {
 
 /* Block Page- Similar Artist*/
 #page-similar h2{
-  margin-left: 20px;
+  margin-left: 0px;
   margin-top: 0;
 } 
 
 .similar-items{
   display:flex;
   flex-direction: row;
-  margin-left: 20px;
-  margin-right: 20px;
+  margin-left: 0px;
+  margin-right: 0px;
   margin-bottom: 100px;
 }
 
