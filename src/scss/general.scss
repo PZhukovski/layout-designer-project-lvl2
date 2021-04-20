@@ -91,8 +91,12 @@ h2 {
 /*  Block HEADER */
 .header  {
   max-width: 414px;
-  left: -40px;
+  left: -20px;
   right: 0;
+  top:0;
+}
+.horizontal-menu{
+  margin-top: 32px;
 }
 .horizontal-menu li{
   display: flex;
@@ -100,21 +104,29 @@ h2 {
 
 }
 .logo{
+  box-sizing: border-box;
+  width: 59px;
+  height: 13px;
   padding: 0;
   margin-bottom: 23px;
+  margin-right: 0;
 }
 
 .logo-img{
    margin-top: -5px;
+   
 }
 .menu{
   margin-left: 0;
   box-sizing: border-box;
   width: 82px;
+  height: 13px;
+  margin-top: 3px;
 }
+
 .search form {
-  left: 60px;
-  top: 128px;
+  left: 40px;
+  top: 146px;
 }
 .search input{
   width: 374px;
@@ -125,7 +137,7 @@ h2 {
   max-width:414px;
 }
 .main h1{
-  margin-top: 55px;
+  margin-top: 45px;
 }
 .main h2{
   margin-bottom: 16px;
@@ -138,6 +150,12 @@ h2 {
 }
 .main p{
   font-size: 16px;
+  margin-bottom: 18px;
+}
+.access{
+  box-sizing: border-box;
+  width: 374px;
+  margin: auto;
 }
 .access-data input  {
   min-width: 374px;

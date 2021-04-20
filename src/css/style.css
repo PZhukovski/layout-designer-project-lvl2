@@ -13,7 +13,8 @@
 }
 
 .horizontal-menu {
-  margin-left: 0;
+  padding-left: 0;
+  margin-left: 20px;
   position: relative;
 }
 .horizontal-menu li {
@@ -27,11 +28,12 @@
 }
 
 .logo {
-  margin-right: 0px;
+  margin-right: 88px;
   text-align: left;
 }
 
 .logo-img {
+  margin-top: -5px;
   margin-right: 16px;
   float: left;
 }
@@ -46,10 +48,14 @@
   margin-left: 24px;
 }
 
+.horizontal-menu li:nth-child(3) {
+  margin-left: 0;
+}
+
 .search form {
   position: absolute;
   padding-left: 0;
-  right: -550px;
+  right: -670px;
   top: 5px;
   font-weight: normal;
   font-size: 13.3px;
@@ -70,6 +76,8 @@
 
 #page-description .container {
   width: 1200px;
+  padding-left: 0;
+  padding-right: 0;
 }
 
 .main {
@@ -89,6 +97,7 @@
   margin-left: 0;
   margin-right: 0;
   color: #ffffff;
+  font-weight: bold;
 }
 .main h2 {
   margin-bottom: 32px;
@@ -96,11 +105,14 @@
   margin-left: 0px;
   margin-right: 0px;
   color: #ffffff;
+  font-weight: bold;
 }
 .main p {
   padding-top: 0;
   margin-top: 0;
   color: #ffffff;
+  font-size: 16px;
+  margin-bottom: 16px;
 }
 
 .main h1, .main h2, .main p, .access-music, .main-pricing h2, .main-news h2, .main-app h2, .ps {
@@ -129,6 +141,12 @@
     flex-wrap: wrap;
     justify-content: center;
 } */
+.access {
+  box-sizing: border-box;
+  width: 570px;
+  margin: auto;
+}
+
 .get-access {
   width: 570px;
   margin: auto;
@@ -156,10 +174,10 @@
 }
 #page-pricing h2 {
   margin-top: 0;
-  margin-bottom: 50px;
+  margin-bottom: 46px;
 }
 #page-pricing h3 {
-  margin-bottom: 180px;
+  margin-bottom: 155px;
 }
 
 .price-page-item:nth-child(1) {
@@ -176,7 +194,7 @@
 }
 
 .price-page-items {
-  margin-bottom: 50px;
+  margin-bottom: 39px;
   /* & li{
     list-style-type: none; 
     display: inline-block;
@@ -191,10 +209,12 @@
   background-size: contain;
   background-repeat: no-repeat;
   color: #ffffff;
+  margin-bottom: 0x;
 }
 .price-page-item h3 {
   font-size: 24px;
   line-height: 36px;
+  margin-top: 21px;
   font-weight: normal;
   text-align: center;
   text-transform: uppercase;
@@ -214,15 +234,16 @@
 }
 
 .pricing-value {
-  box-sizing: border-box;
-  width: 323px;
-  height: 96px;
+  box-sizing: content-box;
+  width: 318px;
+  height: 66px;
+  align-items: flex-start;
   text-align: center;
-  margin: 0;
+  /* margin: 0; */
   padding: 0;
   font-size: 64px;
   font-weight: 400;
-  margin-bottom: 24px;
+  margin-top: 0px;
   line-height: 96px;
 }
 
@@ -243,6 +264,7 @@
   font-weight: 400;
   font-size: 16px;
   text-transform: uppercase;
+  margin-top: 5px;
   margin-bottom: 65px;
 }
 
@@ -272,7 +294,7 @@
 }
 #page-news h3 {
   font-size: 30px;
-  line-height: 24px;
+  line-height: 45px;
   font-weight: normal;
   text-align: center;
   text-transform: capitalize;
@@ -358,7 +380,7 @@
     width: 580px;
     height: 45px;
     font-size: 30px;
-    line-height: 24px;
+    line-height: 45px;
     font-weight: normal;
     text-align: center;
     text-transform: capitalize;
@@ -611,14 +633,16 @@
   line-height: 19.2px;
 }
 
+.artist-mix button, .artist-like button {
+  padding: 20px 30px;
+}
+
 .artist-mix button {
-  padding-left: 0px;
   background: #5328a1;
   border: none;
 }
 
 .artist-like button {
-  padding-left: 40px;
   background: #95390c;
   border: none;
 }
@@ -746,7 +770,7 @@
   font-size: 18px;
   line-height: 27px;
   font-weight: bold;
-  margin-top: 18px;
+  margin-top: 15px;
   margin-bottom: 0;
   color: #ffffff;
   text-transform: capitalize;
@@ -909,8 +933,13 @@ h2 {
   /*  Block HEADER */
   .header {
     max-width: 414px;
-    left: -40px;
+    left: -20px;
     right: 0;
+    top: 0;
+  }
+
+  .horizontal-menu {
+    margin-top: 32px;
   }
 
   .horizontal-menu li {
@@ -919,8 +948,12 @@ h2 {
   }
 
   .logo {
+    box-sizing: border-box;
+    width: 59px;
+    height: 13px;
     padding: 0;
     margin-bottom: 23px;
+    margin-right: 0;
   }
 
   .logo-img {
@@ -931,11 +964,13 @@ h2 {
     margin-left: 0;
     box-sizing: border-box;
     width: 82px;
+    height: 13px;
+    margin-top: 3px;
   }
 
   .search form {
-    left: 60px;
-    top: 128px;
+    left: 40px;
+    top: 146px;
   }
 
   .search input {
@@ -949,7 +984,7 @@ h2 {
   }
 
   .main h1 {
-    margin-top: 55px;
+    margin-top: 45px;
   }
 
   .main h2 {
@@ -965,6 +1000,13 @@ h2 {
 
   .main p {
     font-size: 16px;
+    margin-bottom: 18px;
+  }
+
+  .access {
+    box-sizing: border-box;
+    width: 374px;
+    margin: auto;
   }
 
   .access-data input {
