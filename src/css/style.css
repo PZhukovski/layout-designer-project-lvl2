@@ -177,7 +177,7 @@
   margin-bottom: 46px;
 }
 #page-pricing h3 {
-  margin-bottom: 190px;
+  margin-bottom: 200px;
 }
 
 .price-page-item:nth-child(1) {
@@ -195,11 +195,6 @@
 
 .price-page-items {
   margin-bottom: 39px;
-  /* & li{
-    list-style-type: none; 
-    display: inline-block;
-    flex-wrap: wrap;
-  } */
 }
 
 .price-page-item {
@@ -214,8 +209,7 @@
 .price-page-item h3 {
   font-size: 24px;
   line-height: 36px;
-  padding-top: 21px;
-  margin-top: 0;
+  margin-top: 21px;
   font-weight: normal;
   text-align: center;
   text-transform: uppercase;
@@ -250,6 +244,7 @@
 .pricing-value sup {
   font-size: 32px;
   font-weight: 400;
+  line-height: 48px;
 }
 
 .arrange {
@@ -264,7 +259,7 @@
   font-weight: 400;
   font-size: 16px;
   text-transform: uppercase;
-  margin-top: 60px;
+  margin-top: 38px;
   margin-bottom: 65px;
 }
 
@@ -401,15 +396,17 @@
   }
 
   .news-item-2 {
-    margin-top: 74px;
+    margin-top: 80px;
   }
 
   .news-item img {
+    width: 585px;
+    height: 286px;
     float: left;
     margin-right: 50px;
   }
 
-  .news-body p, .news-body-2 p {
+  .news-body p {
     box-sizing: content-box;
     width: 580px;
     height: 48px;
@@ -429,7 +426,7 @@
     width: 580px;
     height: 48px;
     margin-right: 0;
-    margin-bottom: 24px;
+    margin-bottom: 15px;
     margin-left: 0px;
     text-align: justify;
     font-size: 16px;
@@ -440,6 +437,8 @@
   }
 
   .news-item-2 img {
+    width: 585px;
+    height: 286px;
     float: right;
     margin-left: 50px;
   }
@@ -468,7 +467,7 @@
     padding: 16px 30px;
     background: transparent;
     border: 2px solid #cacaca;
-    border-radius: 3px;
+    border-radius: 5px;
     color: #ffffff;
     line-height: 19.2px;
     text-decoration: none;
@@ -542,7 +541,7 @@
 }
 
 .footer-info {
-  margin-top: 5px;
+  margin-top: 0;
   column-count: 4;
   margin-bottom: 75px;
   column-gap: 38px;
@@ -1049,6 +1048,7 @@ h2 {
   #page-pricing h3 {
     font-size: 16px;
     line-height: 24px;
+    margin-top: 18px;
   }
 
   .price-page-item + .price-page-item {
@@ -1108,7 +1108,7 @@ h2 {
     font-size: 16px;
     font-weight: 400;
     margin-bottom: 0;
-    line-height: 26px;
+    line-height: 24px;
   }
 
   .news-body p, .news-body-2 p {
@@ -1187,7 +1187,7 @@ h2 {
   }
 
   .footer-info h2:nth-child(1) {
-    margin-top: 13px;
+    margin-top: 0;
   }
 
   .footer-info, .else-info {
