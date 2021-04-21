@@ -177,10 +177,11 @@ h2 {
 
 #page-pricing h2{
   font-size: 18px;
+  margin-left: 0;
+  margin-right: 0;
 }
 #page-pricing h3{
   font-size: 16px;
-  margin-bottom: 180px;
   line-height: 24px;
 }
 .price-page-item + .price-page-item {
@@ -223,11 +224,15 @@ h2 {
   margin-right: 0;
   margin-bottom: 48px;
 }
-
+#page-news h2{
+  margin-left:0;
+  margin-right: 0;
+}
 #page-news h3 {
   font-size: 16px;
   font-weight: 400;
   margin-bottom: 0;
+  line-height: 26px;
   
 }
 .news-body p , .news-body-2 p{
