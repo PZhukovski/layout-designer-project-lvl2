@@ -318,9 +318,14 @@ h2 {
   flex-direction: column;
 }
 .else-item{
+  
   margin-bottom: 16px;
   margin-right: 0;
+& a{
+  display: block;
 }
+}
+
 
 
 /* Artist */

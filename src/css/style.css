@@ -216,7 +216,7 @@
 }
 .price-page-item h3 {
   font-size: 24px;
-  line-height: 36px;
+  line-height: 45px;
   margin-top: 21px;
   font-weight: normal;
   text-align: center;
@@ -273,11 +273,13 @@
   font-style: normal;
   font-weight: normal;
   text-align: center;
+  line-height: 19.2px;
 }
 
 .ps {
   font-size: 16px;
   margin: 0;
+  line-height: 24px;
 }
 
 /*  Block Page News */
@@ -1222,6 +1224,9 @@ h2 {
   .else-item {
     margin-bottom: 16px;
     margin-right: 0;
+  }
+  .else-item a {
+    display: block;
   }
 
   /* Artist */
