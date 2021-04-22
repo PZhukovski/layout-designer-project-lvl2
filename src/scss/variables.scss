@@ -180,10 +180,12 @@
 .price-page-item:nth-child(1) {
   background-image: url("../images/subscribe_1.png");
   margin-left: -45px;
+  margin-right: 47.6px;
 }
 
 .price-page-item:nth-child(2) {
   background-image: url("../images/subscribe_2.png");
+  margin-right: 45.6px;
 }
 
 .price-page-item:nth-child(3) {
@@ -196,8 +198,9 @@
 
 }
 .price-page-item:nth-child(1){
-    width:367px;
+    width: 367px;
     height: 619px;
+    
 }
 .price-page-item {
   width: 371px;
@@ -220,9 +223,7 @@
 .price-page-item:nth-child(3){
     margin-right: -40px;
 }
-.price-page-item + .price-page-item {
-  margin-left: 45px;
-}
+
 
 .pricing-item {
   padding-right: 1.5rem;
@@ -254,7 +255,7 @@
   padding: 20px 30px;
   background: transparent;
   border: 2px solid #cacaca;
-  border-radius: 3px;
+  border-radius: 5px;
   color: #ffffff;
   text-decoration: none;
   font-weight: 400;
@@ -532,7 +533,7 @@
   width: 100%;
   height:100%;
   padding-top: 62px;
-  padding-bottom: 2rem;
+  padding-bottom: 48px;
   background: linear-gradient(89.75deg, #5328a1 32.83%, #95390c 81.56%);
 }
 
@@ -601,6 +602,8 @@
 }
 
 .else-info a{
+  padding-top: 2.5px;
+  padding-bottom: 2.5px;
   text-decoration: none;
   color: #e0e0e0;
   font-weight: normal;
@@ -611,7 +614,8 @@
 .else-item {
   display: inline;
   flex-wrap: wrap;
-  margin-right: 15px;  
+  margin-right: 15px; 
+  line-height: 24px;
 }
 
 /* Artist */
