@@ -195,6 +195,12 @@
 
 .price-page-items {
   margin-bottom: 39px;
+  margin-left: 5px;
+}
+
+.price-page-item:nth-child(1) {
+  width: 367px;
+  height: 619px;
 }
 
 .price-page-item {
@@ -557,6 +563,10 @@
   margin-left: -40px;
 }
 
+.contact-item:nth-child(1), .contact-item:nth-child(3) {
+  display: inline-block;
+}
+
 .footer-info, .else-info {
   margin-left: 120px;
   margin-right: 120px;
@@ -580,9 +590,11 @@
   margin-bottom: 40px;
 }
 
-.else-info ul {
-  list-style-type: none;
-  margin-left: -40px;
+.else-info {
+  margin-left: 120px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
 }
 
 .else-info a {
@@ -593,7 +605,7 @@
   line-height: 24px;
 }
 
-.else-info li {
+.else-item {
   display: inline;
   flex-wrap: wrap;
   margin-right: 15px;
@@ -1061,6 +1073,7 @@ h2 {
 
   .price-page-item:nth-child(3) {
     margin-right: 0px;
+    margin-bottom: 19px;
   }
 
   .price-page-items {
@@ -1069,7 +1082,7 @@ h2 {
   }
 
   .price-page-item {
-    margin-bottom: 30px;
+    margin-bottom: 26px;
   }
 
   .ps {
@@ -1201,9 +1214,13 @@ h2 {
     margin-top: 30px;
   }
 
-  .else-info li {
-    display: flex;
+  .else-info {
+    flex-direction: column;
+  }
+
+  .else-item {
     margin-bottom: 16px;
+    margin-right: 0;
   }
 
   /* Artist */

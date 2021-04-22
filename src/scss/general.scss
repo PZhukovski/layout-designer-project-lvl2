@@ -193,13 +193,14 @@ h2 {
 }
 .price-page-item:nth-child(3){
   margin-right: 0px;
+  margin-bottom: 19px;
 }
 .price-page-items {
  margin-left:0px;
  margin-bottom: 0;
 }
 .price-page-item {
-  margin-bottom: 30px;
+  margin-bottom: 26px;
 }
 .ps{
   margin-top: 0px;
@@ -313,9 +314,12 @@ h2 {
   margin-top: 30px;
   
 }
-.else-info li{
-  display: flex;
+.else-info {
+  flex-direction: column;
+}
+.else-item{
   margin-bottom: 16px;
+  margin-right: 0;
 }
 
 
