@@ -216,7 +216,7 @@
 }
 .price-page-item h3 {
   font-size: 24px;
-  line-height: 45px;
+  line-height: 36px;
   margin-top: 21px;
   font-weight: normal;
   text-align: center;
@@ -598,8 +598,6 @@
 }
 
 .else-info a {
-  padding-top: 2.5px;
-  padding-bottom: 2.5px;
   text-decoration: none;
   color: #e0e0e0;
   font-weight: normal;
@@ -611,7 +609,7 @@
   display: inline;
   flex-wrap: wrap;
   margin-right: 15px;
-  line-height: 24px;
+  /* line-height: 24px; */
 }
 
 /* Artist */
