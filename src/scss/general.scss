@@ -308,6 +308,9 @@ h2 {
   margin-left: 20px;
   margin-right: 20px;
 }
+.contact-item:nth-child(2) {
+  display: block;
+}
 .footer h2{
   margin-left: 0px;
   margin-right: 0;
@@ -317,13 +320,17 @@ h2 {
 .else-info {
   flex-direction: column;
 }
+.else-item:nth-child(5){
+  margin-bottom: 0;
+}
 .else-item{
   
   margin-bottom: 16px;
-  margin-right: 0;
+  margin-right: 16px;
 & a{
   display: block;
 }
+
 }
 
 

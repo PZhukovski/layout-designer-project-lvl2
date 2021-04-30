@@ -182,13 +182,13 @@
 
 .price-page-item:nth-child(1) {
   background-image: url("../images/subscribe_1.png");
-  margin-left: -45px;
-  margin-right: 47.6px;
+  margin-left: 0;
+  margin-right: auto;
 }
 
 .price-page-item:nth-child(2) {
   background-image: url("../images/subscribe_2.png");
-  margin-right: 45.6px;
+  margin-right: auto;
 }
 
 .price-page-item:nth-child(3) {
@@ -198,11 +198,6 @@
 .price-page-items {
   margin-bottom: 39px;
   margin-left: 5px;
-}
-
-.price-page-item:nth-child(1) {
-  width: 367px;
-  height: 619px;
 }
 
 .price-page-item {
@@ -224,7 +219,7 @@
 }
 
 .price-page-item:nth-child(3) {
-  margin-right: -40px;
+  margin-right: 0px;
 }
 
 .pricing-item {
@@ -233,16 +228,13 @@
 }
 
 .pricing-value {
-  box-sizing: content-box;
-  width: 320px;
-  height: 66px;
   align-items: flex-start;
   text-align: center;
   padding: 0;
   font-size: 64px;
   font-weight: 400;
   margin: 0;
-  line-height: 96px;
+  line-height: 60px;
 }
 
 .pricing-value sup {
@@ -1209,6 +1201,10 @@ h2 {
     margin-right: 20px;
   }
 
+  .contact-item:nth-child(2) {
+    display: block;
+  }
+
   .footer h2 {
     margin-left: 0px;
     margin-right: 0;
@@ -1219,9 +1215,13 @@ h2 {
     flex-direction: column;
   }
 
+  .else-item:nth-child(5) {
+    margin-bottom: 0;
+  }
+
   .else-item {
     margin-bottom: 16px;
-    margin-right: 0;
+    margin-right: 16px;
   }
   .else-item a {
     display: block;
