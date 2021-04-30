@@ -194,7 +194,7 @@
 
 .price-page-items {
   margin-bottom: 39px;
-  margin-left: 5px;
+  margin-left: 0px;
 
 }
 
@@ -658,29 +658,29 @@
   line-height: 19.2px;
  }
 }
-.artist-mix button , .artist-like button{
+.artist-mix button {
    padding: 20px 30px;
 
 }
-.artist-mix button {
+.mix {
   background: #5328a1;
   border: none;
 }
 
-.artist-like button{
+.like{
   background: #95390c;
   border: none;
 }
 
-.artist-mix + .artist-like {
+.mix + .like {
   margin-left: 1.5rem;
 }
 
-.artist-like , .artist-mix{
+.mix , .like{
   position: relative;
 }
 
-.artist-mix  img{
+.mix img{
   position: absolute;
   height: 20px;
   width: 20px;
@@ -688,7 +688,7 @@
   left: 31px;
 }
 
-.artist-like img{
+.like img{
   position: absolute;
   height: 20px;
   width: 17.79px;

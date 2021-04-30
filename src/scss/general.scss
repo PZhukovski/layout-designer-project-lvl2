@@ -308,8 +308,9 @@ h2 {
   margin-left: 20px;
   margin-right: 20px;
 }
-.contact-item:nth-child(2) {
+.contact-item p  {
   display: block;
+  margin:0;
 }
 .footer h2{
   margin-left: 0px;
@@ -342,7 +343,7 @@ h2 {
   margin-left: 20px;
   margin-right: 20px;
 }
-.artist-mix +.artist-like {
+.mix + .like {
   margin-left: 0;
   margin-top: 24px;
 }
