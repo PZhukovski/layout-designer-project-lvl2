@@ -201,7 +201,7 @@
 .price-page-item {
   box-sizing: border-box;
   max-width: 368px;
-  height: 619px;
+  height: 613px;
   text-align: center;
   background-size: contain;
   background-repeat: no-repeat;
@@ -273,9 +273,7 @@
 .ps {
   font-size: 16px;
   margin: 0;
-  padding-bottom: 1px;
   margin-top: 38px;
-  margin-bottom: 16px;
   line-height: 24px;
 }
 
