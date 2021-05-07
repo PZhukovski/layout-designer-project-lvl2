@@ -205,7 +205,8 @@
   background-size: contain;
   background-repeat: no-repeat;
   color:#ffffff;
-  margin-bottom: 0x;
+  margin-bottom: 0;
+  border-radius: 1rem;
 
 & h3{
   font-size: 24px;
@@ -245,9 +246,10 @@
   line-height: 48px;
 }
 
-.arrange {
-  min-width: 320px;
-  min-height: 66px; 
+.arrange  {
+  display: inline-block;
+  min-width: 260px;
+  min-height: 26px; 
   padding: 20px 30px;
   background: transparent;
   border: 2px solid #cacaca;
@@ -568,6 +570,9 @@
 }
 .contact-item:nth-child(1) , .contact-item:nth-child(3){
     display: inline-block;
+  }
+.contact-item p{
+    margin:0;
 }
 .footer-info , .else-info{
     margin-left: 120px;
@@ -588,7 +593,7 @@
 }
 
 .border-top{
-  border-top: 1px solid #e0e0e0;
+  border: 1px solid #e0e0e0;
   margin-bottom: 40px;
 }
 
