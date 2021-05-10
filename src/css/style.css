@@ -1209,12 +1209,14 @@ h2 {
   }
 
   .price-page-items {
+    max-width: 374px;
     flex-wrap: wrap;
     margin-left: 0;
     margin-bottom: 0;
   }
 
   .price-page-item {
+    max-width: 374px;
     margin-bottom: 26px;
   }
 
