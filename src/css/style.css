@@ -184,12 +184,12 @@
 .price-page-item:nth-child(1) {
   background-image: url("../images/subscribe_1.png");
   margin-left: 0;
-  margin-right: 43px;
+  margin-right: 50px;
 }
 
 .price-page-item:nth-child(2) {
   background-image: url("../images/subscribe_2.png");
-  margin-right: 43px;
+  margin-right: 50px;
 }
 
 .price-page-item:nth-child(3) {
@@ -1002,6 +1002,10 @@ body {
 
 .f-wrap {
   flex-wrap: wrap;
+}
+
+.f-nowrap {
+  flex-wrap: nowrap;
 }
 
 .fd-column {
