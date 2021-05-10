@@ -254,7 +254,7 @@
   min-height: 26px;
   padding: 20px 30px;
   background: transparent;
-  border: 1px solid #ffffff;
+  border: 1px solid #cacaca;
   border-radius: 5px;
   color: #ffffff;
   text-decoration: none;
@@ -366,7 +366,7 @@
     min-height: 26px;
     padding: 20px 30px;
     background: transparent;
-    border: 1px solid #ffffff;
+    border: 1px solid #cacaca;
     border-radius: 5px;
     color: #ffffff;
     text-decoration: none;
@@ -1223,6 +1223,10 @@ h2 {
 
   .pricing-item {
     padding-top: 0;
+  }
+
+  .arrange {
+    border: 1px solid #ffffff;
   }
 
   .ps {
