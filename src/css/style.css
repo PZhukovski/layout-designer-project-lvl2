@@ -1174,6 +1174,10 @@ h2 {
   }
 
   /* Block Page Pricing */
+  #page-pricing {
+    margin-left: 0;
+  }
+
   #page-pricing h2 {
     font-size: 18px;
     margin-left: 0;
@@ -1192,6 +1196,11 @@ h2 {
 
   .price-page-item:nth-child(1) {
     margin-left: 0;
+    margin-right: 0;
+  }
+
+  .price-page-item:nth-child(2) {
+    margin-right: 0;
   }
 
   .price-page-item:nth-child(3) {
@@ -1200,7 +1209,8 @@ h2 {
   }
 
   .price-page-items {
-    margin-left: 0px;
+    flex-wrap: wrap;
+    margin-left: 0;
     margin-bottom: 0;
   }
 
@@ -1208,11 +1218,15 @@ h2 {
     margin-bottom: 26px;
   }
 
+  .pricing-item {
+    padding-top: 0;
+  }
+
   .ps {
     margin-top: 0px;
     font-size: 16px;
-    margin-right: 20px;
-    margin-left: 20px;
+    margin-right: 0px;
+    margin-left: 0px;
   }
 
   /*  Block Page News */
