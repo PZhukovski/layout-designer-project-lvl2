@@ -3,61 +3,67 @@
   font-family: "Roboto";
   src: url(../fonts/Roboto-Regular.ttf);
 }
+
 body {
-  font-family: "Roboto";
+  font-family: "Roboto", sans-serif;
   font-size: 18px;
   line-height: 1.5;
   color: #cacaca;
-  background-color:#08020d;
+  background-color: #08020d;
   margin: 0;
-  
 }
 
-.container{
+.container {
   box-sizing: border-box;
   max-width: 1240px;
   margin: 0 auto;
   padding-left: 20px;
-  padding-right: 20px; 
-} 
-.d-flex{
-  display:flex;
+  padding-right: 20px;
 }
 
-.f-wrap{
-  flex-wrap: wrap;
- }
- .f-nowrap{
-  flex-wrap: nowrap;
- }
-.fd-column{
-  flex-direction: column;
- }
+.d-flex {
+  display: flex;
+}
 
-.fd-row{
+.f-wrap {
+  flex-wrap: wrap;
+}
+
+.f-nowrap {
+  flex-wrap: nowrap;
+}
+
+.fd-column {
+  flex-direction: column;
+}
+
+.fd-row {
   flex-direction: row;
 }
 
-.jc-center{
+.jc-center {
   justify-content: center;
 }
-.jc-space{
-   justify-content: space-between;
+
+.jc-space {
+  justify-content: space-between;
 }
-.jc-left{
+
+.jc-left {
   justify-content: left;
 }
 
-.jc-end{
+.jc-end {
   justify-content: end;
 }
-.al-it-center{
+
+.al-it-center {
   align-items: center;
 }
-.btn{
+
+.btn {
   text-align: center;
 }
-
 
 h1 {
   font-size: 60px;
@@ -71,406 +77,464 @@ h2 {
   line-height: 57px;
   font-weight: bold;
   text-transform: uppercase;
-}    
+}
 
-
-@media  (width: 414px){
-  .container{
+@media (width: 414px) {
+  .container {
     box-sizing: border-box;
     max-width: 414px;
-    margin:0;
+    margin: 0;
   }
-h1 {
-  font-size: 30px;
-  line-height: 45px;
-  font-weight: bold;
-   text-transform: uppercase;
- } 
-h2 {
-  font-size: 18px;
-  line-height: 27px;
-  font-weight: bold;
-  text-transform: uppercase;
-}  
-/*  Block HEADER */
-.header  {
-  max-width: 414px;
-  left: -20px;
-  right: 0;
-  top:0;
-}
-.horizontal-menu{
-  margin-top: 32px;
-}
-.horizontal-menu li{
-  display: flex;
-  flex-wrap: wrap;
 
-}
-.logo{
-  box-sizing: border-box;
-  width: 59px;
-  height: 13px;
-  padding: 0;
-  margin-bottom: 23px;
-  margin-right: 0;
-}
+  h1 {
+    font-size: 30px;
+    line-height: 45px;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
 
-.logo-img{
-   margin-top: -5px;
-   
-}
-.menu{
-  margin-left: 0;
-  box-sizing: border-box;
-  width: 82px;
-  height: 13px;
-  margin-top: 3px;
-}
+  h2 {
+    font-size: 18px;
+    line-height: 27px;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
 
-.search form {
-  left: 40px;
-  top: 146px;
-}
-.search input{
-  width: 374px;
-  margin-bottom: 0;
-}
-/*  Block Main Page-description */
-#page-description .container{
-  max-width:414px;
-}
-.main h1{
-  margin-top: 45px;
-}
-.main h2{
-  margin-bottom: 16px;
-  margin-left:20px;
-  margin-right: 20px;
-}
-.main h1, h2 , p{
-  margin-left:20px;
-  margin-right: 20px;
-}
-.main p{
-  font-size: 16px;
-  margin-bottom: 18px;
-}
-.access{
-  box-sizing: border-box;
-  width: 374px;
-  margin: auto;
-}
-.access-data input  {
-  min-width: 374px;
-  min-height: 50px;
-}
-.get-access{
-  width: 374px;
-}
-.get-access input{
-  box-sizing:border-box;
-  width: 374px;
-  height: 57px;
-}
-.access-data +.access-data{
-  margin-left: 0;
-}
+  /*  Block HEADER */
+  .header {
+    max-width: 414px;
+    left: -20px;
+    right: 0;
+    top: 0;
+  }
 
-/* Block Page Pricing */
-#page-pricing{
-  margin-left: 0;
-}
+  .horizontal-menu {
+    margin-top: 32px;
+  }
 
-#page-pricing h2{
-  font-size: 18px;
-  margin-left: 0;
-  margin-right: 0;
-  margin-bottom: 45px;
-}
-#page-pricing h3{
-  font-size: 16px;
-  line-height: 24px;
-  margin-top: 18px;
-}
-.price-page-item + .price-page-item {
-  margin-left: 0;
-}
-.price-page-item:nth-child(1) {
+  .horizontal-menu li {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .logo {
+    box-sizing: border-box;
+    width: 59px;
+    height: 13px;
+    padding: 0;
+    margin-bottom: 23px;
+    margin-right: 0;
+  }
+
+  .logo-img {
+    margin-top: -5px;
+  }
+
+  .menu {
+    margin-left: 0;
+    box-sizing: border-box;
+    width: 82px;
+    height: 13px;
+    margin-top: 3px;
+  }
+
+  .search form {
+    left: 40px;
+    top: 146px;
+  }
+
+  .search input {
+    width: 374px;
+    margin-bottom: 0;
+  }
+
+  /*  Block Main Page-description */
+  #page-description .container {
+    max-width: 414px;
+  }
+
+  .main h1,
+  h2,
+  p {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+  .main h1 {
+    margin-top: 45px;
+  }
+
+  .main h2 {
+    margin-bottom: 16px;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+  .main p {
+    font-size: 16px;
+    margin-bottom: 18px;
+  }
+
+  .access {
+    box-sizing: border-box;
+    width: 374px;
+    margin: auto;
+  }
+
+  .access-data input {
+    min-width: 374px;
+    min-height: 50px;
+  }
+
+  .get-access {
+    width: 374px;
+  }
+
+  .get-access input {
+    box-sizing: border-box;
+    width: 374px;
+    height: 57px;
+  }
+
+  .access-data + .access-data {
+    margin-left: 0;
+  }
+
+  /* Block Page Pricing */
+  #page-pricing {
+    margin-left: 0;
+  }
+
+  .main-pricing h2 {
+    font-size: 18px;
     margin-left: 0;
     margin-right: 0;
-}
-.price-page-item:nth-child(2){
-  margin-right: 0;
-}
-.price-page-item:nth-child(3){
-  margin-right: 0px;
-  margin-bottom: 19px;
-}
-.price-page-items {
- max-width: 374px; ;
- flex-wrap: wrap;
- margin-left:0;
- margin-bottom: 0;
-}
-.price-page-item {
-  max-width: 374px;
-  margin-bottom: 26px;
-}
-.pricing-item{
-  padding-top: 0;
-}
-.arrange{
-  border: 1px solid #ffffff;
-}
-.ps{
-  margin-top: 0px;
-  font-size: 16px;
-  margin-right: 0px;
-  margin-left: 0px;
-}
-
- /*  Block Page News */
- .news-item , .news-item-2{
-  display: flex;
-  flex-wrap: wrap;
-  /*margin-left: 20px;
-  margin-right: 20px; */
-}
-.news-item-2{
-  margin-top:64px;
-}
-.news-item-2 img , .news-item img{
-  width: 374px;
-  height: 187px;
-  margin-left: 0;
-  margin-right: 0;
-  margin-bottom: 48px;
-}
-#page-news h2{
-  margin-left:0;
-  margin-right: 0;
-}
-#page-news h3 {
-  font-size: 16px;
-  font-weight: 400;
-  margin-bottom: 0;
-  line-height: 24px;
-  
-}
-.news-body p , .news-body-2 p{
-    
-  margin-left:0;
-  margin-right: 0;
-  margin-bottom: 23px;
-
-}
-.news-author img , .news-author p{
-  margin-right:0px;
-}
-.news-author p{
-  margin-top:0;
-}
-.news-author img{
-  height: 19px;
-  width: 19px;
-  margin-top: 0px;
-  margin-left: 0;
-  margin-bottom: 0;
-}
-  /*  Block Page App */
-  #page-app{
-    margin-left: 0px;
-    margin-right: 0px;
-   & h2{
-     margin-top: 0;
-   } 
+    margin-bottom: 45px;
   }
-  .column-2{
-   display: flex;
-   flex-wrap: wrap;
-   justify-content: center;
-}
-.info-app , .img-mobile-app{
+
+  .main-pricing h3 {
+    font-size: 16px;
+    line-height: 24px;
+    margin-top: 18px;
+  }
+
+  .price-page-items {
+    max-width: 374px;
+    flex-wrap: wrap;
+    margin-left: 0;
+    margin-bottom: 0;
+  }
+
+  .price-page-item {
+    max-width: 374px;
+    margin-bottom: 26px;
+  }
+
+  .price-page-item:nth-child(1) {
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .price-page-item:nth-child(2) {
+    margin-right: 0;
+  }
+
+  .price-page-item:nth-child(3) {
+    margin-right: 0;
+    margin-bottom: 19px;
+  }
+
+  .price-page-item + .price-page-item {
+    margin-left: 0;
+  }
+
+  .pricing-item {
+    padding-top: 0;
+  }
+
+  .arrange {
+    border: 1px solid #fff;
+  }
+
+  .ps {
+    margin-top: 0;
+    font-size: 16px;
+    margin-right: 0;
+    margin-left: 0;
+  }
+
+  /*  Block Page News */
+  .news-item,
+  .news-item-2 {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .news-item-2 {
+    margin-top: 64px;
+  }
+
+  .news-item-2 img,
+  .news-item img {
+    width: 374px;
+    height: 187px;
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 48px;
+  }
+
+  .news-item h3,
+  .news-item-2 h3 {
+    font-size: 16px;
+    font-weight: 400;
+    margin-bottom: 0;
+    line-height: 24px;
+  }
+
+  .main-news h2 {
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .news-body p,
+  .news-body-2 p {
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 23px;
+  }
+
+  .news-author img,
+  .news-author p {
+    margin-right: 0;
+  }
+
+  .news-author p {
+    margin-top: 0;
+  }
+
+  .news-author img {
+    height: 19px;
+    width: 19px;
+    margin-top: 0;
+    margin-left: 0;
+    margin-bottom: 0;
+  }
+
+  /*  Block Page App */
+  #page-app {
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .main-app h2 {
+    margin-top: 0;
+  }
+
+  .column-2 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .info-app,
+  .img-mobile-app {
     margin-left: -20px;
     margin-right: 0;
-}
-.img-mobile-app img{
-  width:333px;
-  height: 278px;
-}
-.img-mobile-app{
-  box-sizing: border-box;
-  width:333px;
-  height: 278px;
-}
-.info-app + .img-mobile-app{
-  margin-left: 0;
-}
-.info-app p {
-  text-align: left;
-  /*margin-right: 20px; */
-}
-.info-app button, .img-mobile-app{
-  margin-left: 20px; 
-}
-.img-mobile-app{
-  
-  order: -1;
-}
-/*  Block Footer*/
+  }
 
-.footer-info h2:nth-child(1){
-  margin-top: 0;
-}
-.footer-info , .else-info{
-  margin-left: 20px;
-  margin-right: 20px;
-}
+  .img-mobile-app img {
+    width: 333px;
+    height: 278px;
+  }
 
-.contact-item p  {
-  display: block;
-  margin:0;
-}
-.footer h2{
-  margin-left: 0px;
-  margin-right: 0;
-  margin-top: 30px;
-  margin-bottom: 16px;
-}
-.border-top{
-  border-top: 1px solid #cacaca;
-}
-.else-info {
-  flex-direction: column;
-}
-.else-item:nth-child(5){
-  margin-bottom: 0;
-}
-.else-item{
-  
-  margin-bottom: 16px;
-  margin-right: 16px;
-& a{
-  display: block;
-}
+  .img-mobile-app {
+    box-sizing: border-box;
+    width: 333px;
+    height: 278px;
+    order: -1;
+  }
 
-}
+  .info-app button,
+  .img-mobile-app {
+    margin-left: 20px;
+  }
 
+  .info-app + .img-mobile-app {
+    margin-left: 0;
+  }
 
+  .info-app p {
+    text-align: left;
 
-/* Artist */
-/* Block page description artist */
-.artist h1 , .artist p{
-  text-align: left;
-  margin-left: 20px;
-  margin-right: 20px;
-}
-.mix + .like {
-  margin-left: 0;
-  margin-top: 24px;
-}
-.artist-page{
-  margin-left: 20px;
-  margin-right: 20px;
-}
- /* Block Popular-Track artist */
-#page-popular-track h2{
-  margin-left: 0px; 
-}
-.popular-track-list{
-  display: flex;
-  margin-right: 0;
-  margin-left: 0px;
-  margin-bottom: 25px;
-  flex-direction: column;
-}
+    /* margin-right: 20px; */
+  }
 
-.popular-track {
-  display: flex;
-  flex-direction: row;
-  position: relative;
-  margin-right: 0px;
-}
-.time-track{
- position: absolute;
- left:330px;
-}
-.time-track-1{
-  position: absolute;
-  left:330px;
- }
+  /*  Block Footer */
 
-/* Block Page-Discography Artist*/  
-   
-#page-discography h2{
-  margin-left: 0px;
-  
-}
-.discography-info h3{
-  margin-top:10px;
-}
-.discography-items{
-  display:flex;
-  flex-direction: row;
-  margin-left: 0px;
-  margin-right: 0px;
-}
-.discography-item:nth-child(5){
-  margin-right:50px;
-  
-}
-.discography-item:nth-child(6){
-  margin-right:0;
-}
-.discography-item img{
-  width: 137px;
-  height: 137px;
-  margin:0;
+  .footer-info,
+  .else-info {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
 
-}
+  .contact-item p {
+    display: block;
+    margin: 0;
+  }
 
-.discography-info {
-  box-sizing: border-box;
-  width: 137px;
-  margin-right: 0px;
-}
+  .footer h2 {
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 30px;
+    margin-bottom: 16px;
+  }
 
-/* Block Page- Similar Artist*/
-#page-similar h2{
-  margin-left: 0px;
-  margin-top: 0;
-} 
+  .footer-info h2:nth-child(1) {
+    margin-top: 0;
+  }
 
-.similar-items{
-  display:flex;
-  flex-direction: row;
-  margin-left: 0px;
-  margin-right: 0px;
-  margin-bottom: 100px;
-}
+  .border-top {
+    border-top: 1px solid #cacaca;
+  }
 
-.similar-item{
-  margin-bottom: 25px;
-  margin-right: 50px;
-}
-.similar-item:nth-child(5) , .similar-item:nth-child(6) {
+  .else-info {
+    flex-direction: column;
+  }
+
+  .else-item {
+    margin-bottom: 16px;
+    margin-right: 16px;
+
+    & a {
+      display: block;
+    }
+  }
+
+  .else-item:nth-child(5) {
+    margin-bottom: 0;
+  }
+
+  /* Artist */
+
+  /* Block page description artist */
+  .artist h1,
+  .artist p {
+    text-align: left;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+  .mix + .like {
+    margin-left: 0;
+    margin-top: 24px;
+  }
+
+  .artist-page {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+  /* Block Popular-Track artist */
+  #page-popular-track h2 {
+    margin-left: 0;
+  }
+
+  .popular-track-list {
+    display: flex;
+    margin-right: 0;
+    margin-left: 0;
     margin-bottom: 25px;
-}
-.similar-item img{
-  width: 137px;
-  height: 137px;
-  margin:0;
+    flex-direction: column;
+  }
 
-}
-.similar-item p{
-  box-sizing: border-box;
-  width: 137px;
-  margin-right: 0px;
-  
+  .popular-track {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    margin-right: 0;
+  }
+
+  .time-track {
+    position: absolute;
+    left: 330px;
+  }
+
+  .time-track-1 {
+    position: absolute;
+    left: 330px;
+  }
+
+  /* Block Page-Discography Artist */
+
+  #page-discography h2 {
+    margin-left: 0;
+  }
+
+  .discography-info h3 {
+    margin-top: 10px;
+  }
+
+  .discography-items {
+    display: flex;
+    flex-direction: row;
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .discography-item:nth-child(5) {
+    margin-right: 50px;
+  }
+
+  .discography-item:nth-child(6) {
+    margin-right: 0;
+  }
+
+  .discography-item img {
+    width: 137px;
+    height: 137px;
+    margin: 0;
+  }
+
+  .discography-info {
+    box-sizing: border-box;
+    width: 137px;
+    margin-right: 0;
+  }
+
+  /* Block Page- Similar Artist */
+  #page-similar h2 {
+    margin-left: 0;
+    margin-top: 0;
+  }
+
+  .similar-items {
+    display: flex;
+    flex-direction: row;
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 100px;
+  }
+
+  .similar-item {
+    margin-bottom: 25px;
+    margin-right: 50px;
+  }
+
+  .similar-item:nth-child(5),
+  .similar-item:nth-child(6) {
+    margin-bottom: 25px;
+  }
+
+  .similar-item img {
+    width: 137px;
+    height: 137px;
+    margin: 0;
+  }
+
+  .similar-item p {
+    box-sizing: border-box;
+    width: 137px;
+    margin-right: 0;
+  }
 }
 
-}
-
-
-  
