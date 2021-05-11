@@ -1,7 +1,5 @@
 @charset "UTF-8";
-
 /* Внутри этого файла подключайте все созданные SASS файлы. Именно этот файл и будет преобразован в css. */
-
 /* Все основные настройки проекта и цветовые схемы расположите в нём. Это удобнее сделать сразу. Определите основные цвета сайта и создайте для них соответствующие переменные. Подключите файл в самом верху файла app.scss. */
 .header {
   left: 80px;
@@ -19,13 +17,11 @@
   margin-left: 20px;
   position: relative;
 }
-
 .horizontal-menu li {
   list-style-type: none;
   display: inline-block;
   flex-wrap: wrap;
 }
-
 .horizontal-menu a {
   text-decoration: none;
   color: #cacaca;
@@ -41,7 +37,6 @@
   margin-right: 16px;
   float: left;
 }
-
 .logo-img img {
   width: 24px;
   height: 24px;
@@ -96,7 +91,6 @@
   background-position: center;
   background-size: cover;
 }
-
 .main h1 {
   margin-bottom: 0;
   margin-top: 0;
@@ -105,7 +99,6 @@
   color: #fff;
   font-weight: bold;
 }
-
 .main h2 {
   margin-bottom: 32px;
   margin-top: 0;
@@ -114,7 +107,6 @@
   color: #fff;
   font-weight: bold;
 }
-
 .main p {
   padding-top: 0;
   margin-top: 0;
@@ -204,7 +196,6 @@
   margin-bottom: 0;
   border-radius: 1rem;
 }
-
 .price-page-item h3 {
   margin: 0;
   font-size: 24px;
@@ -312,7 +303,6 @@
     margin-bottom: 0;
     border-radius: 1rem;
   }
-
   .price-page-item h3 {
     margin: 0;
     font-size: 24px;
@@ -395,7 +385,6 @@
     line-height: 24px;
   }
 }
-
 /*  Block Page News */
 #page-news {
   width: 100%;
@@ -461,7 +450,6 @@
   font-size: 13px;
   margin-top: 0;
 }
-
 .news-author img {
   height: 19px;
   width: 19px;
@@ -506,13 +494,13 @@
   }
 
   .news-item,
-  .news-item-2 {
+.news-item-2 {
     display: block;
     flex-wrap: wrap;
   }
 
   .news-item h3,
-  .news-item-2 h3 {
+.news-item-2 h3 {
     box-sizing: content-box;
     width: 580px;
     height: 45px;
@@ -578,7 +566,6 @@
     font-size: 13px;
     margin-top: 0;
   }
-
   .news-author img {
     height: 19px;
     width: 19px;
@@ -588,7 +575,7 @@
   }
 
   .news-author img,
-  .news-author p {
+.news-author p {
     margin-right: 17px;
   }
 
@@ -608,7 +595,6 @@
     margin-top: 48px;
   }
 }
-
 /*  Block Page App */
 #page-app {
   width: 100%;
@@ -681,13 +667,11 @@
   column-gap: 38px;
   column-width: 270px;
 }
-
 .footer-info ul {
   break-inside: avoid;
   list-style-type: none;
   margin: 0;
 }
-
 .footer-info li {
   text-align: left;
   margin-left: -40px;
@@ -746,12 +730,10 @@
   display: inline;
   flex-wrap: wrap;
   margin-right: 15px;
-
   /* line-height: 24px; */
 }
 
 /* Artist */
-
 /* Block page description artist */
 .artist {
   width: 100%;
@@ -785,7 +767,6 @@
   margin-left: 120px;
   padding-right: 24px;
 }
-
 .artist-page button {
   box-sizing: border-box;
   min-width: 200px;
@@ -842,7 +823,6 @@
   height: 100%;
   padding-top: 100px;
 }
-
 #page-popular-track h2 {
   margin-top: 0;
   margin-bottom: 23px;
@@ -857,14 +837,12 @@
   margin-top: 25px;
   margin-right: 49px;
 }
-
 .popular-track img {
   position: relative;
   margin-right: 15px;
   height: 55px;
   width: 55px;
 }
-
 .popular-track p {
   font-size: 12.8px;
 }
@@ -900,7 +878,6 @@
   height: 100%;
   padding-top: 100px;
 }
-
 #page-discography h2 {
   margin-top: 0;
   margin-bottom: 49px;
@@ -912,7 +889,6 @@
   margin-right: 50px;
   margin-bottom: 25px;
 }
-
 .discography-item img {
   width: 250px;
   height: 250px;
@@ -954,7 +930,6 @@
   height: 100%;
   padding-top: 100px;
 }
-
 #page-similar h2 {
   margin-top: 0;
   margin-bottom: 49px;
@@ -974,7 +949,6 @@
   margin-right: 50px;
   margin-bottom: 25px;
 }
-
 .similar-item img {
   width: 250px;
   height: 250px;
@@ -1011,7 +985,6 @@
   font-family: "Roboto";
   src: url(../fonts/Roboto-Regular.ttf);
 }
-
 body {
   font-family: "Roboto", sans-serif;
   font-size: 18px;
@@ -1162,8 +1135,8 @@ h2 {
   }
 
   .main h1,
-  h2,
-  p {
+h2,
+p {
     margin-left: 20px;
     margin-right: 20px;
   }
@@ -1273,7 +1246,7 @@ h2 {
 
   /*  Block Page News */
   .news-item,
-  .news-item-2 {
+.news-item-2 {
     display: flex;
     flex-wrap: wrap;
   }
@@ -1283,7 +1256,7 @@ h2 {
   }
 
   .news-item-2 img,
-  .news-item img {
+.news-item img {
     width: 374px;
     height: 187px;
     margin-left: 0;
@@ -1292,7 +1265,9 @@ h2 {
   }
 
   .news-item h3,
-  .news-item-2 h3 {
+.news-item-2 h3 {
+    width: 374px;
+    height: 24px;
     font-size: 16px;
     font-weight: 400;
     margin-bottom: 0;
@@ -1305,14 +1280,14 @@ h2 {
   }
 
   .news-body p,
-  .news-body-2 p {
+.news-body-2 p {
     margin-left: 0;
     margin-right: 0;
     margin-bottom: 23px;
   }
 
   .news-author img,
-  .news-author p {
+.news-author p {
     margin-right: 0;
   }
 
@@ -1345,7 +1320,7 @@ h2 {
   }
 
   .info-app,
-  .img-mobile-app {
+.img-mobile-app {
     margin-left: -20px;
     margin-right: 0;
   }
@@ -1363,7 +1338,7 @@ h2 {
   }
 
   .info-app button,
-  .img-mobile-app {
+.img-mobile-app {
     margin-left: 20px;
   }
 
@@ -1373,13 +1348,12 @@ h2 {
 
   .info-app p {
     text-align: left;
-
     /* margin-right: 20px; */
   }
 
   /*  Block Footer */
   .footer-info,
-  .else-info {
+.else-info {
     margin-left: 20px;
     margin-right: 20px;
   }
@@ -1412,7 +1386,6 @@ h2 {
     margin-bottom: 16px;
     margin-right: 16px;
   }
-
   .else-item a {
     display: block;
   }
@@ -1422,10 +1395,9 @@ h2 {
   }
 
   /* Artist */
-
   /* Block page description artist */
   .artist h1,
-  .artist p {
+.artist p {
     text-align: left;
     margin-left: 20px;
     margin-right: 20px;
@@ -1527,7 +1499,7 @@ h2 {
   }
 
   .similar-item:nth-child(5),
-  .similar-item:nth-child(6) {
+.similar-item:nth-child(6) {
     margin-bottom: 25px;
   }
 
