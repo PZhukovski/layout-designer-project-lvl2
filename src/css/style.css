@@ -1,5 +1,7 @@
 @charset "UTF-8";
+
 /* Внутри этого файла подключайте все созданные SASS файлы. Именно этот файл и будет преобразован в css. */
+
 /* Все основные настройки проекта и цветовые схемы расположите в нём. Это удобнее сделать сразу. Определите основные цвета сайта и создайте для них соответствующие переменные. Подключите файл в самом верху файла app.scss. */
 .header {
   left: 80px;
@@ -17,11 +19,13 @@
   margin-left: 20px;
   position: relative;
 }
+
 .horizontal-menu li {
   list-style-type: none;
   display: inline-block;
   flex-wrap: wrap;
 }
+
 .horizontal-menu a {
   text-decoration: none;
   color: #cacaca;
@@ -37,6 +41,7 @@
   margin-right: 16px;
   float: left;
 }
+
 .logo-img img {
   width: 24px;
   height: 24px;
@@ -91,31 +96,41 @@
   background-position: center;
   background-size: cover;
 }
+
 .main h1 {
   margin-bottom: 0;
   margin-top: 0;
   margin-left: 0;
   margin-right: 0;
-  color: #ffffff;
+  color: #fff;
   font-weight: bold;
 }
+
 .main h2 {
   margin-bottom: 32px;
   margin-top: 0;
-  margin-left: 0px;
-  margin-right: 0px;
-  color: #ffffff;
+  margin-left: 0;
+  margin-right: 0;
+  color: #fff;
   font-weight: bold;
 }
+
 .main p {
   padding-top: 0;
   margin-top: 0;
-  color: #ffffff;
+  color: #fff;
   font-size: 16px;
   margin-bottom: 16px;
 }
 
-.main h1, .main h2, .main p, .access-music, .main-pricing h2, .main-news h2, .main-app h2, .ps {
+.main h1,
+.main h2,
+.main p,
+.access-music,
+.main-pricing h2,
+.main-news h2,
+.main-app h2,
+.ps {
   text-align: center;
 }
 
@@ -129,18 +144,19 @@
   padding-left: 20px;
   margin-bottom: 1.5rem;
   font-size: 14px;
-  color: #ffffff;
+  color: #fff;
 }
 
 .access-data + .access-data {
   margin-left: 24px;
 }
 
-/*.get-access form{
+/* .get-access form{
     display:flex;
     flex-wrap: wrap;
     justify-content: center;
 } */
+
 .access {
   box-sizing: border-box;
   width: 570px;
@@ -162,7 +178,7 @@
   font-size: 13.3px;
   line-height: 15px;
   text-transform: uppercase;
-  color: #ffffff;
+  color: #fff;
 }
 
 /*  Block Page Pricing */
@@ -170,15 +186,41 @@
   width: 100%;
   height: 100%;
   padding-top: 100px;
-  color: #ffffff;
+  color: #fff;
   margin-left: 43px;
 }
+
 #page-pricing h2 {
   margin-top: 0;
   margin-bottom: 49px;
 }
+
+.price-page-item h3 {
+  font-size: 24px;
+  line-height: 36px;
+  font-weight: normal;
+  text-align: center;
+  text-transform: uppercase;
+}
+
 #page-pricing h3 {
   margin: 0;
+}
+
+.price-page-items {
+  margin-left: 0;
+}
+
+.price-page-item {
+  box-sizing: border-box;
+  max-width: 368px;
+  height: 619px;
+  text-align: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  color: #fff;
+  margin-bottom: 0;
+  border-radius: 1rem;
 }
 
 .price-page-item:nth-child(1) {
@@ -194,29 +236,6 @@
 
 .price-page-item:nth-child(3) {
   background-image: url("../images/subscribe_3.png");
-}
-
-.price-page-items {
-  margin-left: 0px;
-}
-
-.price-page-item {
-  box-sizing: border-box;
-  max-width: 368px;
-  height: 619px;
-  text-align: center;
-  background-size: contain;
-  background-repeat: no-repeat;
-  color: #ffffff;
-  margin-bottom: 0;
-  border-radius: 1rem;
-}
-.price-page-item h3 {
-  font-size: 24px;
-  line-height: 36px;
-  font-weight: normal;
-  text-align: center;
-  text-transform: uppercase;
 }
 
 /* .price-page-item:nth-child(3){
@@ -256,7 +275,7 @@
   background: transparent;
   border: 1px solid #cacaca;
   border-radius: 5px;
-  color: #ffffff;
+  color: #fff;
   text-decoration: none;
   font-weight: 400;
   font-size: 16px;
@@ -282,17 +301,43 @@
 
 @media (min-width: 1240px) {
   #page-pricing {
-    /*width: 100%;
+    /* width: 100%;
     height:100%; */
     padding-top: 100px;
-    color: #ffffff;
+    color: #fff;
   }
+
   #page-pricing h2 {
     margin-top: 0;
     margin-bottom: 49px;
   }
+
+  .price-page-item h3 {
+    font-size: 24px;
+    line-height: 36px;
+    font-weight: normal;
+    text-align: center;
+    text-transform: uppercase;
+  }
+
   #page-pricing h3 {
     margin: 0;
+  }
+
+  .price-page-items {
+    margin-left: 0;
+  }
+
+  .price-page-item {
+    box-sizing: border-box;
+    max-width: 368px;
+    height: 619px;
+    text-align: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    color: #fff;
+    margin-bottom: 0;
+    border-radius: 1rem;
   }
 
   .price-page-item:nth-child(1) {
@@ -306,29 +351,6 @@
 
   .price-page-item:nth-child(3) {
     background-image: url("../images/subscribe_3.png");
-  }
-
-  .price-page-items {
-    margin-left: 0px;
-  }
-
-  .price-page-item {
-    box-sizing: border-box;
-    max-width: 368px;
-    height: 619px;
-    text-align: center;
-    background-size: contain;
-    background-repeat: no-repeat;
-    color: #ffffff;
-    margin-bottom: 0;
-    border-radius: 1rem;
-  }
-  .price-page-item h3 {
-    font-size: 24px;
-    line-height: 36px;
-    font-weight: normal;
-    text-align: center;
-    text-transform: uppercase;
   }
 
   /* .price-page-item:nth-child(3){
@@ -368,7 +390,7 @@
     background: transparent;
     border: 1px solid #cacaca;
     border-radius: 5px;
-    color: #ffffff;
+    color: #fff;
     text-decoration: none;
     font-weight: 400;
     font-size: 16px;
@@ -392,29 +414,32 @@
     line-height: 24px;
   }
 }
+
 /*  Block Page News */
 #page-news {
   width: 100%;
   height: 100%;
   padding-top: 100px;
-  color: #ffffff;
+  color: #fff;
 }
+
 #page-news h2 {
   margin-top: 0;
   margin-bottom: 48px;
 }
+
 #page-news h3 {
   font-size: 30px;
   line-height: 45px;
   font-weight: normal;
-  text-align: center;
   text-transform: capitalize;
   margin-bottom: 30px;
   margin-top: 0;
   text-align: left;
 }
 
-.news-item, .news-item-2 {
+.news-item,
+.news-item-2 {
   display: block;
   flex-wrap: wrap;
 }
@@ -428,7 +453,8 @@
   margin-right: 50px;
 }
 
-.news-body p, .news-body-2 p {
+.news-body p,
+.news-body-2 p {
   margin-right: 0;
   margin-left: 0;
   margin-bottom: 24px;
@@ -448,8 +474,9 @@
 .news-author p {
   margin-bottom: 0;
   font-size: 13px;
-  margin-top: 0px;
+  margin-top: 0;
 }
+
 .news-author img {
   height: 19px;
   width: 19px;
@@ -457,7 +484,8 @@
   margin-left: 0;
 }
 
-.news-author img, .news-author p {
+.news-author img,
+.news-author p {
   margin-right: 17px;
 }
 
@@ -466,7 +494,7 @@
   background: transparent;
   border: 2px solid #cacaca;
   border-radius: 3px;
-  color: #ffffff;
+  color: #fff;
   line-height: 19.2px;
   text-decoration: none;
   font-size: 12.8px;
@@ -481,13 +509,19 @@
      height:100%; */
     padding-top: 100px;
     padding-bottom: 28px;
-    color: #ffffff;
+    color: #fff;
     margin-bottom: 0;
   }
+
   #page-news h2 {
     margin-top: 0;
     margin-bottom: 48px;
   }
+
+  .news-body h3 {
+    margin-left: 620px;
+  }
+
   #page-news h3 {
     box-sizing: content-box;
     width: 580px;
@@ -495,18 +529,14 @@
     font-size: 30px;
     line-height: 45px;
     font-weight: normal;
-    text-align: center;
     text-transform: capitalize;
     margin-bottom: 30px;
     margin-top: 0;
     text-align: left;
   }
 
-  .news-body h3 {
-    margin-left: 620px;
-  }
-
-  .news-item, .news-item-2 {
+  .news-item,
+  .news-item-2 {
     display: block;
     flex-wrap: wrap;
   }
@@ -543,7 +573,7 @@
     height: 48px;
     margin-right: 0;
     margin-bottom: 15px;
-    margin-left: 0px;
+    margin-left: 0;
     text-align: justify;
     font-size: 16px;
     line-height: 24px;
@@ -564,6 +594,7 @@
     font-size: 13px;
     margin-top: 0;
   }
+
   .news-author img {
     height: 19px;
     width: 19px;
@@ -572,19 +603,21 @@
     margin-bottom: 0;
   }
 
-  .news-author img, .news-author p {
+  .news-author img,
+  .news-author p {
     margin-right: 17px;
   }
 
-  /*.to-album:nth-child(2){
+  /* .to-album:nth-child(2){
       margin-bottom: 28px;
   } */
+
   .to-album {
     padding: 16px 30px;
     background: transparent;
     border: 2px solid #cacaca;
     border-radius: 5px;
-    color: #ffffff;
+    color: #fff;
     line-height: 19.2px;
     text-decoration: none;
     font-size: 12.8px;
@@ -592,26 +625,29 @@
     margin-top: 48px;
   }
 }
+
 /*  Block Page App */
+
 #page-app {
   width: 100%;
   height: 100%;
   padding-top: 100px;
   margin-bottom: 100px;
 }
+
 #page-app h2 {
-  color: #ffffff;
+  color: #fff;
   margin-bottom: 48px;
   margin-top: 0;
-}
-
-.info-app + .img-mobile-app {
-  margin-left: 144px;
 }
 
 .img-mobile-app {
   width: 333px;
   height: 278px;
+}
+
+.info-app + .img-mobile-app {
+  margin-left: 144px;
 }
 
 .column-2 {
@@ -633,11 +669,11 @@
   background: #95390c;
   border-radius: 32px;
   font-size: 12.8px;
-  color: #ffffff;
+  color: #fff;
   border-style: none;
 }
 
-/*  Block Footer*/
+/*  Block Footer */
 .footer {
   width: 100%;
   height: 100%;
@@ -647,13 +683,13 @@
 }
 
 .footer-info h2 {
-  margin-top: 0px;
+  margin-top: 0;
   font-size: 18px;
   text-align: left;
   line-height: 27px;
   font-weight: bold;
   text-transform: uppercase;
-  color: #ffffff;
+  color: #fff;
 }
 
 .footer-info {
@@ -663,17 +699,20 @@
   column-gap: 38px;
   column-width: 270px;
 }
+
 .footer-info ul {
   break-inside: avoid;
   list-style-type: none;
   margin: 0;
 }
+
 .footer-info li {
   text-align: left;
   margin-left: -40px;
 }
 
-.contact-item:nth-child(1), .contact-item:nth-child(3) {
+.contact-item:nth-child(1),
+.contact-item:nth-child(3) {
   display: inline-block;
 }
 
@@ -681,12 +720,14 @@
   margin: 0;
 }
 
-.footer-info, .else-info {
+.footer-info,
+.else-info {
   margin-left: 120px;
   margin-right: 120px;
 }
 
-.footer-info a, .footer-info {
+.footer-info a,
+.footer-info {
   text-decoration: none;
   color: #e0e0e0;
   font-weight: normal;
@@ -723,10 +764,12 @@
   display: inline;
   flex-wrap: wrap;
   margin-right: 15px;
+
   /* line-height: 24px; */
 }
 
 /* Artist */
+
 /* Block page description artist */
 .artist {
   width: 100%;
@@ -740,7 +783,8 @@
   background-size: cover;
 }
 
-.artist h1, .artist p {
+.artist h1,
+.artist p {
   text-align: left;
   margin-left: 120px;
   margin-right: 120px;
@@ -759,6 +803,7 @@
   margin-left: 120px;
   padding-right: 24px;
 }
+
 .artist-page button {
   box-sizing: border-box;
   min-width: 200px;
@@ -766,7 +811,7 @@
   text-transform: uppercase;
   border-radius: 5px;
   font-size: 12.8px;
-  color: #ffffff;
+  color: #fff;
   line-height: 19.2px;
 }
 
@@ -784,12 +829,13 @@
   border: none;
 }
 
-.mix + .like {
-  margin-left: 1.5rem;
+.mix,
+.like {
+  position: relative;
 }
 
-.mix, .like {
-  position: relative;
+.mix + .like {
+  margin-left: 1.5rem;
 }
 
 .mix img {
@@ -814,11 +860,12 @@
   height: 100%;
   padding-top: 100px;
 }
+
 #page-popular-track h2 {
   margin-top: 0;
   margin-bottom: 23px;
   text-align: left;
-  color: #ffffff;
+  color: #fff;
 }
 
 .popular-track {
@@ -828,12 +875,14 @@
   margin-top: 25px;
   margin-right: 49px;
 }
+
 .popular-track img {
   position: relative;
   margin-right: 15px;
   height: 55px;
   width: 55px;
 }
+
 .popular-track p {
   font-size: 12.8px;
 }
@@ -858,33 +907,30 @@
 .track-info h3 {
   margin-bottom: 0;
   font-size: 12.8px;
-  line-height: 19, 2px;
+  line-height: 19.2px;
   font-weight: bold;
   text-transform: uppercase;
 }
 
-/* Block Page-Discography Artist*/
+/* Block Page-Discography Artist */
 #page-discography {
   width: 100%;
   height: 100%;
   padding-top: 100px;
 }
+
 #page-discography h2 {
   margin-top: 0;
   margin-bottom: 49px;
   text-align: left;
-  color: #ffffff;
-}
-
-.discography-items {
-  /* margin-left: 120px;
-  margin-right: 120px;  */
+  color: #fff;
 }
 
 .discography-item {
   margin-right: 50px;
   margin-bottom: 25px;
 }
+
 .discography-item img {
   width: 250px;
   height: 250px;
@@ -920,17 +966,18 @@
   line-height: 24px;
 }
 
-/* Block Page- Similar Artist*/
+/* Block Page- Similar Artist */
 #page-similar {
   width: 100%;
   height: 100%;
   padding-top: 100px;
 }
+
 #page-similar h2 {
   margin-top: 0;
   margin-bottom: 49px;
   text-align: left;
-  color: #ffffff;
+  color: #fff;
 }
 
 .similar-items {
@@ -945,13 +992,16 @@
   margin-right: 50px;
   margin-bottom: 25px;
 }
+
 .similar-item img {
   width: 250px;
   height: 250px;
 }
 
-.similar-item:nth-child(5), .similar-item:nth-child(6),
-.similar-item:nth-child(7), .similar-item:nth-child(8) {
+.similar-item:nth-child(5),
+.similar-item:nth-child(6),
+.similar-item:nth-child(7),
+.similar-item:nth-child(8) {
   margin-bottom: 0;
 }
 
@@ -979,6 +1029,7 @@
   font-family: "Roboto";
   src: url(../fonts/Roboto-Regular.ttf);
 }
+
 body {
   font-family: "Roboto";
   font-size: 18px;
@@ -1138,7 +1189,9 @@ h2 {
     margin-right: 20px;
   }
 
-  .main h1, h2, p {
+  .main h1,
+  h2,
+  p {
     margin-left: 20px;
     margin-right: 20px;
   }
@@ -1205,7 +1258,7 @@ h2 {
   }
 
   .price-page-item:nth-child(3) {
-    margin-right: 0px;
+    margin-right: 0;
     margin-bottom: 19px;
   }
 
@@ -1237,10 +1290,12 @@ h2 {
   }
 
   /*  Block Page News */
-  .news-item, .news-item-2 {
+  .news-item,
+  .news-item-2 {
     display: flex;
     flex-wrap: wrap;
-    /*margin-left: 20px;
+  
+    /* margin-left: 20px;
     margin-right: 20px; */
   }
 
@@ -1248,7 +1303,8 @@ h2 {
     margin-top: 64px;
   }
 
-  .news-item-2 img, .news-item img {
+  .news-item-2 img,
+  .news-item img {
     width: 374px;
     height: 187px;
     margin-left: 0;
@@ -1268,14 +1324,16 @@ h2 {
     line-height: 24px;
   }
 
-  .news-body p, .news-body-2 p {
+  .news-body p,
+  .news-body-2 p {
     margin-left: 0;
     margin-right: 0;
     margin-bottom: 23px;
   }
 
-  .news-author img, .news-author p {
-    margin-right: 0px;
+  .news-author img,
+  .news-author p {
+    margin-right: 0;
   }
 
   .news-author p {
@@ -1285,16 +1343,17 @@ h2 {
   .news-author img {
     height: 19px;
     width: 19px;
-    margin-top: 0px;
+    margin-top: 0;
     margin-left: 0;
     margin-bottom: 0;
   }
 
   /*  Block Page App */
   #page-app {
-    margin-left: 0px;
-    margin-right: 0px;
+    margin-left: 0;
+    margin-right: 0;
   }
+
   #page-app h2 {
     margin-top: 0;
   }
@@ -1305,7 +1364,8 @@ h2 {
     justify-content: center;
   }
 
-  .info-app, .img-mobile-app {
+  .info-app,
+  .img-mobile-app {
     margin-left: -20px;
     margin-right: 0;
   }
@@ -1319,6 +1379,12 @@ h2 {
     box-sizing: border-box;
     width: 333px;
     height: 278px;
+    order: -1;
+  }
+
+  .info-app button,
+  .img-mobile-app {
+    margin-left: 20px;
   }
 
   .info-app + .img-mobile-app {
@@ -1327,23 +1393,17 @@ h2 {
 
   .info-app p {
     text-align: left;
-    /*margin-right: 20px; */
+
+    /* margin-right: 20px; */
   }
 
-  .info-app button, .img-mobile-app {
-    margin-left: 20px;
-  }
-
-  .img-mobile-app {
-    order: -1;
-  }
-
-  /*  Block Footer*/
+  /*  Block Footer */
   .footer-info h2:nth-child(1) {
     margin-top: 0;
   }
 
-  .footer-info, .else-info {
+  .footer-info,
+  .else-info {
     margin-left: 20px;
     margin-right: 20px;
   }
@@ -1354,7 +1414,7 @@ h2 {
   }
 
   .footer h2 {
-    margin-left: 0px;
+    margin-left: 0;
     margin-right: 0;
     margin-top: 30px;
     margin-bottom: 16px;
@@ -1381,8 +1441,10 @@ h2 {
   }
 
   /* Artist */
+
   /* Block page description artist */
-  .artist h1, .artist p {
+  .artist h1,
+  .artist p {
     text-align: left;
     margin-left: 20px;
     margin-right: 20px;
@@ -1400,13 +1462,13 @@ h2 {
 
   /* Block Popular-Track artist */
   #page-popular-track h2 {
-    margin-left: 0px;
+    margin-left: 0;
   }
 
   .popular-track-list {
     display: flex;
     margin-right: 0;
-    margin-left: 0px;
+    margin-left: 0;
     margin-bottom: 25px;
     flex-direction: column;
   }
@@ -1428,9 +1490,9 @@ h2 {
     left: 330px;
   }
 
-  /* Block Page-Discography Artist*/
+  /* Block Page-Discography Artist */
   #page-discography h2 {
-    margin-left: 0px;
+    margin-left: 0;
   }
 
   .discography-info h3 {
@@ -1440,8 +1502,8 @@ h2 {
   .discography-items {
     display: flex;
     flex-direction: row;
-    margin-left: 0px;
-    margin-right: 0px;
+    margin-left: 0;
+    margin-right: 0;
   }
 
   .discography-item:nth-child(5) {
@@ -1461,20 +1523,20 @@ h2 {
   .discography-info {
     box-sizing: border-box;
     width: 137px;
-    margin-right: 0px;
+    margin-right: 0;
   }
 
-  /* Block Page- Similar Artist*/
+  /* Block Page- Similar Artist */
   #page-similar h2 {
-    margin-left: 0px;
+    margin-left: 0;
     margin-top: 0;
   }
 
   .similar-items {
     display: flex;
     flex-direction: row;
-    margin-left: 0px;
-    margin-right: 0px;
+    margin-left: 0;
+    margin-right: 0;
     margin-bottom: 100px;
   }
 
@@ -1483,7 +1545,8 @@ h2 {
     margin-right: 50px;
   }
 
-  .similar-item:nth-child(5), .similar-item:nth-child(6) {
+  .similar-item:nth-child(5),
+  .similar-item:nth-child(6) {
     margin-bottom: 25px;
   }
 
@@ -1496,7 +1559,7 @@ h2 {
   .similar-item p {
     box-sizing: border-box;
     width: 137px;
-    margin-right: 0px;
+    margin-right: 0;
   }
 }
 
